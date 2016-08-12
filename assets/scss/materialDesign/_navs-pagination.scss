@@ -1,0 +1,186 @@
+/*            Navigation menu                */
+.nav-pills > li + li {
+    margin-left: 0;
+}
+
+.nav-pills > li > a {
+    border: 1px solid #2CA8FF;
+    border-radius: 0;
+    color: #2CA8FF;
+    margin-left: -1px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: #F5F5F5;
+}
+
+.nav-pills,
+.pagination{
+    &[data-background-color="blue"]{
+        > li.active > a,
+        > li.active > a:hover,
+        > li.active > a:focus,
+        > .active > a,
+        > .active > span,
+        > .active > a:hover,
+        > .active > span:hover,
+        > .active > a:focus,
+        > .active > span:focus{
+            background-color: #3472F7;
+        }
+    }
+
+    &[data-background-color="azure"]{
+        > li.active > a,
+        > li.active > a:hover,
+        > li.active > a:focus,
+        > .active > a,
+        > .active > span,
+        > .active > a:hover,
+        > .active > span:hover,
+        > .active > a:focus,
+        > .active > span:focus{
+            background-color: #2CA8FF;
+        }
+    }
+
+    &[data-background-color="green"]{
+        > li.active > a,
+        > li.active > a:hover,
+        > li.active > a:focus,
+        > .active > a,
+        > .active > span,
+        > .active > a:hover,
+        > .active > span:hover,
+        > .active > a:focus,
+        > .active > span:focus{
+            background-color: #05AE0E;
+        }
+    }
+
+    &[data-background-color="orange"]{
+        > li.active > a,
+        > li.active > a:hover,
+        > li.active > a:focus,
+        > .active > a,
+        > .active > span,
+        > .active > a:hover,
+        > .active > span:hover,
+        > .active > a:focus,
+        > .active > span:focus{
+            background-color: #FF9500;
+        }
+    }
+
+    &[data-background-color="red"]{
+        > li.active > a,
+        > li.active > a:hover,
+        > li.active > a:focus,
+        > .active > a,
+        > .active > span,
+        > .active > a:hover,
+        > .active > span:hover,
+        > .active > a:focus,
+        > .active > span:focus{
+            background-color: #FF3B30;
+        }
+    }
+}
+
+
+.nav-pills{
+    &[data-background-color="blue"] > li > a {
+        border: 1px solid #3472F7;
+        color: #3472F7;
+    }
+
+    &[data-background-color="azure"] > li > a {
+        border: 1px solid #2CA8FF;
+        color: #2CA8FF;
+    }
+
+    &[data-background-color="green"] > li > a {
+        border: 1px solid #05AE0E;
+        color: #05AE0E;
+    }
+
+    &[data-background-color="orange"] > li > a {
+        border: 1px solid #FF9500;
+        color: #FF9500;
+    }
+
+    &[data-background-color="red"] > li > a {
+        border: 1px solid #FF3B30;
+        color: #FF3B30;
+    }
+
+    > li.active > a,
+    > li.active > a:hover,
+    > li.active > a:focus{
+        background-color: #2CA8FF;
+        color: #FFFFFF;
+    }
+
+    > li:first-child > a{
+        border-radius: 4px 0 0 4px;
+        margin: 0;
+    }
+
+    > li:last-child > a{
+        border-radius: 0 4px 4px 0;
+    }
+
+}
+
+
+.pagination{
+    &.no-border{
+        > li > a,
+        > li > span{
+            border: 0;
+        }
+    }
+
+    > li > a,
+    > li > span,
+    > li:first-child > a,
+    > li:first-child > span,
+    > li:last-child > a,
+    > li:last-child > span{
+        border-radius: 50%;
+        margin: 0 2px;
+        color: #777777;
+    }
+
+    > li.active > a,
+    > li.active > span,
+    > li.active > a:hover,
+    > li.active > span:hover,
+    > li.active > a:focus,
+    > li.active > span:focus{
+        background-color: #2CA8FF;
+        border: 0;
+        color: #FFFFFF;
+        padding: 7px 13px;
+    }
+}
+
+.text-primary, .text-primary:hover{
+    color: #1D62F0;
+}
+.text-info, .text-info:hover{
+    color: #109CFF;
+}
+.text-success, .text-success:hover{
+    color: #0C9C14;
+}
+.text-warning, .text-warning:hover{
+    color: #ED8D00;
+}
+.text-danger, .text-danger:hover{
+    color: #EE2D20;
+}
+.modal-header {
+    border: 0 none;
+
+}
