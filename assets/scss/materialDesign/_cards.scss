@@ -2,6 +2,9 @@
     background-color: #FFFFFF;
     padding: 10px 0 20px;
     width: 100%;
+    border-radius: $border-radius-large;
+    color: $mdb-card-body-text;
+    background: $mdb-card-body-background;
 }
 
 .pick-class-label{

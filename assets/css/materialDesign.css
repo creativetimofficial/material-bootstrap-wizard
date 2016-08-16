@@ -1243,6 +1243,9 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
   background-color: #FFFFFF;
   padding: 10px 0 20px;
   width: 100%;
+  border-radius: 6px;
+  color: rgba(0,0,0, 0.87);
+  background: #fff;
 }
 
 .pick-class-label {

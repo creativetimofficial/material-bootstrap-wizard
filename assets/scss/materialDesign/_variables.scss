@@ -4,6 +4,12 @@ $border-radius-base: 3px !default;
 $border-radius-extreme: 30px !default;
 $border-radius-small:       3px !default;
 $border-radius-label: 12px !default;
+$border-radius-large: 6px !default;
+
+$mdb-text-color-primary: unquote("rgba(#{$rgb-black}, 0.87)") !default;
+$mdb-card-body-text: $mdb-text-color-primary !default;
+
+$mdb-card-body-background: #fff !default;
 
 
 $font-weight-bold:    500 !default;
