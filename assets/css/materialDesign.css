@@ -690,41 +690,6 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
   opacity: 1;
 }
 
-/*     General overwrite     */
-a {
-  color: #2CA8FF;
-}
-
-a:hover, a:focus {
-  color: #109CFF;
-}
-
-a:focus, a:active,
-button::-moz-focus-inner,
-input[type="reset"]::-moz-focus-inner,
-input[type="button"]::-moz-focus-inner,
-input[type="submit"]::-moz-focus-inner,
-select::-moz-focus-inner,
-input[type="file"] > input[type="button"]::-moz-focus-inner,
-input[type="button"]:focus {
-  outline: 0 !important;
-}
-
-.btn:focus,
-.btn:hover,
-.btn:active {
-  outline: 0;
-}
-
-/*           Animations              */
-.form-control, .input-group-addon {
-  -webkit-transition: all 300ms linear;
-  -moz-transition: all 300ms linear;
-  -o-transition: all 300ms linear;
-  -ms-transition: all 300ms linear;
-  transition: all 300ms linear;
-}
-
 .btn,
 .navbar .navbar-nav > li > a.btn {
   border: none;
@@ -1925,34 +1890,34 @@ label {
   font-size: 12px;
 }
 .wizard-card[data-color="green"] .nav-pills > li.active a {
-  background-color: #05ae0e;
+  background-color: #4caf50;
 }
 .wizard-card[data-color="green"] .choice:hover .icon, .wizard-card[data-color="green"] .choice.active .icon {
-  border-color: #05ae0e;
+  border-color: #4caf50;
 }
-.wizard-card[data-color="azzure"] .nav-pills > li.active a {
-  background-color: #2CA8FF;
+.wizard-card[data-color="purple"] .nav-pills > li.active a {
+  background-color: #9c27b0;
 }
-.wizard-card[data-color="azzure"] .choice:hover .icon, .wizard-card[data-color="azzure"] .choice.active .icon {
-  border-color: #2CA8FF;
+.wizard-card[data-color="purple"] .choice:hover .icon, .wizard-card[data-color="purple"] .choice.active .icon {
+  border-color: #9c27b0;
 }
 .wizard-card[data-color="blue"] .nav-pills > li.active a {
-  background-color: #3472f7;
+  background-color: #00bcd4;
 }
 .wizard-card[data-color="blue"] .choice:hover .icon, .wizard-card[data-color="blue"] .choice.active .icon {
-  border-color: #3472f7;
+  border-color: #00bcd4;
 }
 .wizard-card[data-color="orange"] .nav-pills > li.active a {
-  background-color: #ff9500;
+  background-color: #ff9800;
 }
 .wizard-card[data-color="orange"] .choice:hover .icon, .wizard-card[data-color="orange"] .choice.active .icon {
-  border-color: #ff9500;
+  border-color: #ff9800;
 }
 .wizard-card[data-color="red"] .nav-pills > li.active a {
-  background-color: #ff3b30;
+  background-color: #f44336;
 }
 .wizard-card[data-color="red"] .choice:hover .icon, .wizard-card[data-color="red"] .choice.active .icon {
-  border-color: #ff3b30;
+  border-color: #f44336;
 }
 .wizard-card .nav-pills > li > a:focus, .wizard-card .nav-pills > li > a:hover {
   background-color: #999999;

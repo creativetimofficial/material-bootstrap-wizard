@@ -166,29 +166,29 @@ label{
 
     &[data-color="green"]{
         .nav-pills > li.active a{
-            background-color: #05ae0e;
+            background-color: $brand-success;
         }
 
         .choice{
             &:hover,
             &.active{
                 .icon{
-                    border-color: #05ae0e;
+                    border-color: $brand-success;
                 }
             }
         }
     }
 
-    &[data-color="azzure"]{
+    &[data-color="purple"]{
         .nav-pills > li.active a{
-            background-color: #2CA8FF;
+            background-color: $brand-primary;
         }
 
         .choice{
             &:hover,
             &.active{
                 .icon{
-                    border-color: #2CA8FF;
+                    border-color: $brand-primary;
                 }
             }
         }
@@ -196,14 +196,14 @@ label{
 
     &[data-color="blue"]{
         .nav-pills > li.active a{
-            background-color: #3472f7;
+            background-color: $brand-info;
         }
 
         .choice{
             &:hover,
             &.active{
                 .icon{
-                    border-color: #3472f7;
+                    border-color: $brand-info;
                 }
             }
         }
@@ -211,14 +211,14 @@ label{
 
     &[data-color="orange"]{
         .nav-pills > li.active a{
-            background-color: #ff9500;
+            background-color: $brand-warning;
         }
 
         .choice{
             &:hover,
             &.active{
                 .icon{
-                    border-color: #ff9500;
+                    border-color: $brand-warning;
                 }
             }
         }
@@ -226,14 +226,14 @@ label{
 
     &[data-color="red"]{
         .nav-pills > li.active a{
-            background-color: #ff3b30;
+            background-color: $brand-danger;
         }
 
         .choice{
             &:hover,
             &.active{
                 .icon{
-                    border-color: #ff3b30;
+                    border-color: $brand-danger;
                 }
             }
         }
