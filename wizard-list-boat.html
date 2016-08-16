@@ -38,7 +38,7 @@
 
             <!--      Wizard container        -->
             <div class="wizard-container">
-                <div class="card wizard-card ct-wizard-azzure" id="wizard">
+                <div class="card wizard-card" data-color="blue" id="wizard">
                     <form action="" method="">
                 <!--        You can switch "ct-wizard-azzure"  with one of the next bright colors: "ct-wizard-blue", "ct-wizard-green", "ct-wizard-orange", "ct-wizard-red"             -->
 
@@ -61,16 +61,16 @@
                                     <h4 class="info-text"> Let's start with the basic details</h4>
                                   </div>
                                   <div class="col-sm-5 col-sm-offset-1">
-                                      <div class="form-group">
-                                        <label>What city is your boat in?</label>
-                                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Where is your boat located?">
+                                      <div class="form-group label-floating">
+                                        <label class="control-label">What city is your boat in?</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1">
                                       </div>
                                   </div>
                                   <div class="col-sm-5">
-                                      <div class="form-group">
-                                        <label>Boat Type</label>
+                                      <div class="form-group label-floating">
+                                        <label class="control-label">Boat Type</label>
                                         <select class="form-control">
-                                            <option disabled="" selected="">- boat type -</option>
+                                            <option disabled="" selected=""></option>
                                             <option>Power</option>
                                             <option>Sail</option>
                                             <option>Paddle</option>
@@ -79,7 +79,7 @@
                                   </div>
                                   <div class="col-sm-5 col-sm-offset-1">
                                       <div class="form-group">
-                                          <label>Year Manufacture</label>
+                                          <label class="control-label">Year Manufacture</label>
                                           <select class="form-control">
                                             <option disabled="" selected="">- year -</option>
                                             <option>2008</option>
@@ -94,7 +94,7 @@
                                   </div>
                                   <div class="col-sm-5">
                                       <div class="form-group">
-                                          <label>Daily Price</label>
+                                          <label class="control-label">Daily Price</label>
                                           <div class="input-group">
                                               <input type="text" class="form-control">
                                               <span class="input-group-addon">$</span>
@@ -142,7 +142,7 @@
                                     </div>
                                     <div class="col-sm-4">
                                          <div class="form-group">
-                                            <label>Example</label>
+                                            <label class="control-label">Example</label>
                                             <p class="description">"The boat really nice name is recognized as being a really awesome boat. We use it every sunday when we go fishing and we catch a lot. It has some kind of magic shield around it."</p>
                                           </div>
                                     </div>
@@ -151,12 +151,12 @@
                         </div>
                         <div class="wizard-footer">
                             	<div class="pull-right">
-                                    <input type='button' class='btn btn-next btn-fill btn-info btn-wd btn-sm' name='next' value='Next' />
-                                    <input type='button' class='btn btn-finish btn-fill btn-info btn-wd btn-sm' name='finish' value='Finish' />
+                                    <input type='button' class='btn btn-next btn-fill btn-info btn-wd' name='next' value='Next' />
+                                    <input type='button' class='btn btn-finish btn-fill btn-info btn-wd' name='finish' value='Finish' />
 
                                 </div>
                                 <div class="pull-left">
-                                    <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Previous' />
+                                    <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Previous' />
                                 </div>
                                 <div class="clearfix"></div>
                         </div>
@@ -180,6 +180,9 @@
 
     <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
 	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/material.min.js" type="text/javascript">
+
+	</script>
 
 	<!--   plugins 	 -->
 	<script src="assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>

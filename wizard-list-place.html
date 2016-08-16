@@ -38,7 +38,7 @@
 
             <!--      Wizard container        -->
             <div class="wizard-container">
-                <div class="card wizard-card ct-wizard-green" id="wizard">
+                <div class="card wizard-card" data-color="green" id="wizard">
                 <form action="" method="">
                 <!--        You can switch "ct-wizard-azzure"  with one of the next bright colors: "ct-wizard-blue", "ct-wizard-green", "ct-wizard-orange", "ct-wizard-red"             -->
 
@@ -61,16 +61,16 @@
                                     <h4 class="info-text"> Let's start with the basic details</h4>
                                   </div>
                                   <div class="col-sm-5 col-sm-offset-1">
-                                      <div class="form-group">
-                                        <label>City</label>
-                                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Where is your place located?">
+                                      <div class="form-group label-floating">
+                                        <label class="control-label">City</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1">
                                       </div>
                                   </div>
                                   <div class="col-sm-5">
-                                       <div class="form-group">
-                                            <label>Country</label><br>
+                                       <div class="form-group label-floating">
+                                            <label class="control-label">Country</label>
                                              <select name="country" class="form-control">
-                                                <option disabled="" selected="">- country -</option>
+                                                <option disabled="" selected=""></option>
                                                 <option value="Afghanistan"> Afghanistan </option>
                                                 <option value="Albania"> Albania </option>
                                                 <option value="Algeria"> Algeria </option>
@@ -84,10 +84,10 @@
                                           </div>
                                   </div>
                                   <div class="col-sm-5 col-sm-offset-1">
-                                      <div class="form-group">
-                                          <label>Accommodates</label>
+                                      <div class="form-group label-floating">
+                                          <label class="control-label">Accommodates</label>
                                           <select class="form-control">
-                                            <option disabled="" selected="">- persons -</option>
+                                            <option disabled="" selected=""></option>
                                             <option>1 Person</option>
                                             <option>2 Persons </option>
                                             <option>3 Persons</option>
@@ -98,10 +98,10 @@
                                       </div>
                                   </div>
                                   <div class="col-sm-5">
-                                      <div class="form-group">
-                                          <label>Rent price</label>
+                                      <div class="form-group label-floating">
+                                          <label class="control-label">Rent price</label>
                                           <div class="input-group">
-                                              <input type="text" class="form-control" placeholder="Rent price per day">
+                                              <input type="text" class="form-control">
                                               <span class="input-group-addon">$</span>
                                           </div>
                                       </div>
@@ -138,8 +138,8 @@
                                 <h4 class="info-text">Tell us more about facilities. </h4>
                                 <div class="row">
                                     <div class="col-sm-5 col-sm-offset-1">
-                                      <div class="form-group">
-                                          <label>Your place is good for</label>
+                                      <div class="form-group label-floating">
+                                          <label class="control-label">Your place is good for</label>
                                           <select class="form-control">
                                             <option disabled="" selected="">- type -</option>
                                             <option>Business</option>
@@ -149,30 +149,30 @@
                                       </div>
                                     </div>
                                     <div class="col-sm-5">
-                                      <div class="form-group">
-                                          <label>Is air conditioning included ?</label>
+                                      <div class="form-group label-floating">
+                                          <label class="control-label">Is air conditioning included ?</label>
                                           <select class="form-control">
-                                            <option disabled="" selected="">- response -</option>
+                                            <option disabled="" selected=""></option>
                                             <option>Yes</option>
                                             <option>No </option>
                                           </select>
                                       </div>
                                      </div>
                                      <div class="col-sm-5 col-sm-offset-1">
-                                      <div class="form-group">
-                                          <label>Does your place have wi-fi?</label>
+                                      <div class="form-group label-floating">
+                                          <label class="control-label">Does your place have wi-fi?</label>
                                           <select class="form-control">
-                                            <option disabled="" selected="">- response -</option>
+                                            <option disabled="" selected=""></option>
                                             <option>Yes</option>
                                             <option>No </option>
                                           </select>
                                        </div>
                                       </div>
                                       <div class="col-sm-5">
-                                       <div class="form-group">
-                                          <label>Is breakfast included?</label>
+                                       <div class="form-group label-floating">
+                                          <label class="control-label">Is breakfast included?</label>
                                           <select class="form-control">
-                                            <option disabled="" selected="">- response -</option>
+                                            <option disabled="" selected=""></option>
                                             <option>Yes</option>
                                             <option>No </option>
                                           </select>
@@ -184,16 +184,16 @@
                                 <div class="row">
                                     <h4 class="info-text"> Drop us a small description. </h4>
                                     <div class="col-sm-6 col-sm-offset-1">
-                                         <div class="form-group">
-                                            <label>Place description</label>
+                                         <div class="form-group label-floating">
+                                            <label class="control-label">Place description</label>
                                             <textarea class="form-control" placeholder="" rows="9">
 
                                             </textarea>
                                           </div>
                                     </div>
                                     <div class="col-sm-4">
-                                         <div class="form-group">
-                                            <label>Example</label>
+                                         <div class="form-group label-floating">
+                                            <label class="control-label">Example</label>
                                             <p class="description">"The place is really nice. We use it every sunday when we go fishing. It is so awesome."</p>
                                           </div>
                                     </div>
@@ -202,12 +202,12 @@
                         </div>
                         <div class="wizard-footer">
                             	<div class="pull-right">
-                                    <input type='button' class='btn btn-next btn-fill btn-success btn-wd btn-sm' name='next' value='Next' />
-                                    <input type='button' class='btn btn-finish btn-fill btn-success btn-wd btn-sm' name='finish' value='Finish' />
+                                    <input type='button' class='btn btn-next btn-fill btn-success btn-wd' name='next' value='Next' />
+                                    <input type='button' class='btn btn-finish btn-fill btn-success btn-wd' name='finish' value='Finish' />
 
                                 </div>
                                 <div class="pull-left">
-                                    <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Previous' />
+                                    <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Previous' />
                                 </div>
                                 <div class="clearfix"></div>
                         </div>
@@ -230,6 +230,7 @@
 
     <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
 	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/material.min.js" type="text/javascript"></script>
 
 	<!--   plugins 	 -->
 	<script src="assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>

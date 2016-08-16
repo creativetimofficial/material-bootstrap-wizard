@@ -22,9 +22,6 @@
 
 /*      Here the code for the wizard           */
 
-label{
-    font-weight: 400;
-}
 
 .image-container{
     height: 100vh;
@@ -76,6 +73,8 @@ label{
                 border-color: $brand-primary;
             }
         }
+
+        
     }
 
     &[data-color="green"]{

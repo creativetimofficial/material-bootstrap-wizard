@@ -1657,115 +1657,69 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
   border: 0 none;
 }
 
-.tooltip {
-  font-size: 14px;
-  font-weight: bold;
+.popover, .tooltip-inner {
+  color: #555555;
+  line-height: 1.5em;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
 }
 
-.tooltip-arrow {
-  display: none;
+.popover {
+  padding: 0;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.popover.left > .arrow, .popover.right > .arrow, .popover.top > .arrow, .popover.bottom > .arrow {
+  border: none;
+}
+
+.popover-title {
+  background-color: #FFFFFF;
+  border: none;
+  padding: 15px 15px 5px;
+  font-size: 1.3em;
+}
+
+.popover-content {
+  padding: 10px 15px 15px;
+  line-height: 1.4;
+}
+
+.tooltip.in {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0px, 0);
+  -moz-transform: translate3d(0, 0px, 0);
+  -o-transform: translate3d(0, 0px, 0);
+  -ms-transform: translate3d(0, 0px, 0);
+  transform: translate3d(0, 0px, 0);
+}
+
+.tooltip {
   opacity: 0;
+  transition: opacity, transform .2s ease;
+  -webkit-transform: translate3d(0, 5px, 0);
+  -moz-transform: translate3d(0, 5px, 0);
+  -o-transform: translate3d(0, 5px, 0);
+  -ms-transform: translate3d(0, 5px, 0);
+  transform: translate3d(0, 5px, 0);
+}
+.tooltip.left .tooltip-arrow {
+  border-left-color: #FFFFFF;
+}
+.tooltip.right .tooltip-arrow {
+  border-right-color: #FFFFFF;
+}
+.tooltip.top .tooltip-arrow {
+  border-top-color: #FFFFFF;
+}
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #FFFFFF;
 }
 
 .tooltip-inner {
-  background-color: #FAE6A4;
-  border-radius: 4px;
-  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.14), 0 0 0 1px rgba(115, 71, 38, 0.23);
-  color: #734726;
-  max-width: 200px;
-  padding: 6px 10px;
-  text-align: center;
-  text-decoration: none;
-}
-.tooltip-inner:after {
-  content: "";
-  display: inline-block;
-  left: 100%;
-  margin-left: -56%;
-  position: absolute;
-}
-.tooltip-inner:before {
-  content: "";
-  display: inline-block;
-  left: 100%;
-  margin-left: -56%;
-  position: absolute;
-}
-
-.tooltip.top {
-  margin-top: -11px;
-  padding: 0;
-}
-.tooltip.top .tooltip-inner:after {
-  border-top: 11px solid #FAE6A4;
-  border-left: 11px solid transparent;
-  border-right: 11px solid transparent;
-  bottom: -10px;
-}
-.tooltip.top .tooltip-inner:before {
-  border-top: 11px solid rgba(0, 0, 0, 0.2);
-  border-left: 11px solid transparent;
-  border-right: 11px solid transparent;
-  bottom: -11px;
-}
-
-.tooltip.bottom {
-  margin-top: 11px;
-  padding: 0;
-}
-.tooltip.bottom .tooltip-inner:after {
-  border-bottom: 11px solid #FAE6A4;
-  border-left: 11px solid transparent;
-  border-right: 11px solid transparent;
-  top: -10px;
-}
-.tooltip.bottom .tooltip-inner:before {
-  border-bottom: 11px solid rgba(0, 0, 0, 0.2);
-  border-left: 11px solid transparent;
-  border-right: 11px solid transparent;
-  top: -11px;
-}
-
-.tooltip.left {
-  margin-left: -11px;
-  padding: 0;
-}
-.tooltip.left .tooltip-inner:after {
-  border-left: 11px solid #FAE6A4;
-  border-top: 11px solid transparent;
-  border-bottom: 11px solid transparent;
-  right: -10px;
-  left: auto;
-  margin-left: 0;
-}
-.tooltip.left .tooltip-inner:before {
-  border-left: 11px solid rgba(0, 0, 0, 0.2);
-  border-top: 11px solid transparent;
-  border-bottom: 11px solid transparent;
-  right: -11px;
-  left: auto;
-  margin-left: 0;
-}
-
-.tooltip.right {
-  margin-left: 11px;
-  padding: 0;
-}
-.tooltip.right .tooltip-inner:after {
-  border-right: 11px solid #FAE6A4;
-  border-top: 11px solid transparent;
-  border-bottom: 11px solid transparent;
-  left: -10px;
-  top: 0;
-  margin-left: 0;
-}
-.tooltip.right .tooltip-inner:before {
-  border-right: 11px solid rgba(0, 0, 0, 0.2);
-  border-top: 11px solid transparent;
-  border-bottom: 11px solid transparent;
-  left: -11px;
-  top: 0;
-  margin-left: 0;
+  padding: 10px 15px;
+  min-width: 130px;
 }
 
 .card {
@@ -1790,10 +1744,6 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 }
 
 /*      Here the code for the wizard           */
-label {
-  font-weight: 400;
-}
-
 .image-container {
   height: 100vh;
   background-position: center center;
