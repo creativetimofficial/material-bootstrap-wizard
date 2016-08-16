@@ -1457,89 +1457,14 @@ input[type="button"]:focus {
   font-size: 20px;
 }
 
-/*           Labels & Progress-bar              */
 .label {
-  padding: 0.2em 0.6em 0.2em;
-  border: 1px solid #999999;
-  border-radius: 3px;
-  color: #999999;
-  background-color: #FFFFFF;
-  font-weight: 500;
-  font-size: 11px;
+  border-radius: 12px;
+  padding: 5px 12px;
   text-transform: uppercase;
+  font-size: 10px;
 }
-.label.label-fill {
-  color: #FFFFFF;
-}
-
-.label-primary {
-  border-color: #3472F7;
-  color: #3472F7;
-}
-
-.label-info {
-  border-color: #2CA8FF;
-  color: #2CA8FF;
-}
-
-.label-success {
-  border-color: #05AE0E;
-  color: #05AE0E;
-}
-
-.label-warning {
-  border-color: #FF9500;
-  color: #FF9500;
-}
-
-.label-danger {
-  border-color: #FF3B30;
-  color: #FF3B30;
-}
-
-label.error {
-  color: #FF3B30;
-  margin-top: 5px;
-  margin-bottom: 0;
-}
-
-label small {
-  color: #999999;
-}
-
-.label-primary.label-fill, .progress-bar, .progress-bar-primary {
-  background-color: #3472F7;
-}
-
-.label-info.label-fill, .progress-bar-info {
-  background-color: #2CA8FF;
-}
-
-.label-success.label-fill, .progress-bar-success {
-  background-color: #05AE0E;
-}
-
-.label-warning.label-fill, .progress-bar-warning {
-  background-color: #FF9500;
-}
-
-.label-danger.label-fill, .progress-bar-danger {
-  background-color: #FF3B30;
-}
-
-.label-default.label-fill {
+.label.label-default {
   background-color: #999999;
-}
-
-.progress {
-  background-color: #E5E5E5;
-  border-radius: 3px;
-  box-shadow: none;
-  height: 4px;
-}
-
-.progress-thin {
-  height: 2px;
 }
 
 /*            Navigation menu                */
