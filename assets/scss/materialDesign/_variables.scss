@@ -1,0 +1,96 @@
+@import "_colors";
+
+$border-radius-base: 3px !default;
+$border-radius-extreme: 30px !default;
+$border-radius-small:       3px !default;
+
+$font-weight-bold:    500 !default;
+$font-weight-extra-bold: 700 !default;
+
+
+$white-color: #FFFFFF !default;
+$gray-color:  #999999 !default;
+
+
+$brand-primary: $purple !default;
+$brand-info: $cyan !default;
+$brand-success: $green !default;
+$brand-warning: $orange !default;
+$brand-danger: $red !default;
+$brand-rose: $pink !default;
+
+
+
+$mdb-btn-font-size-base: 12px !default;
+$mdb-btn-fab-font-size: 24px !default;
+$mdb-btn-fab-size: 56px !default;
+$mdb-btn-fab-size-mini: 40px !default;
+$mdb-btn-font-size-lg: 14px !default;
+$mdb-btn-font-size-sm: 11px !default;
+$mdb-btn-font-size-xs: 10px !default;
+
+
+$mdb-btn-icon-size-mini: 17px !default;
+$mdb-btn-background-color: $body-bg; //transparent !default;
+$mdb-text-color-light:  $white !default;
+
+
+$mdb-input-underline-color: #D2D2D2 !default;
+$mdb-input-placeholder-color: #AAAAAA !default;
+
+$mdb-label-top-margin-base:           16px !default;
+$mdb-label-as-placeholder-shim-base:  0 !default; // manual adjustment of label top when positioned as placeholder
+$mdb-label-static-size-ratio: 75 / 100 !default;
+$mdb-help-block-size-ratio: 75 / 100 !default;
+$mdb-label-top-margin-small:          12px !default;
+$mdb-label-as-placeholder-shim-small: 8px !default; // manual adjustment of label top when positioned as placeholder
+$mdb-label-top-margin-large:          16px !default;
+$mdb-label-as-placeholder-shim-large: -4px !default; // manual adjustment of label top when positioned as placeholder
+
+
+
+
+$mdb-shadow-key-penumbra-opacity: 0.14 !default;
+$mdb-shadow-key-umbra-opacity: 0.2 !default;
+$mdb-shadow-ambient-shadow-opacity: 0.12 !default;
+
+
+
+$mdb-animation-curve-fast-out-linear-in: cubic-bezier(0.4, 0, 1, 1) !default;
+$mdb-animation-curve-fast-out-slow-in: cubic-bezier(0.4, 0, 0.2, 1) !default;
+$mdb-animation-curve-default: $mdb-animation-curve-fast-out-slow-in !default;
+
+$mdb-input-padding-base-vertical:     8px - 1px !default; // was 6.
+$mdb-input-padding-base-horizontal:   0 !default; // was 12.
+$mdb-input-padding-small-vertical:    4px - 1px !default; // 5
+$mdb-input-padding-large-vertical:    10px - 1px !default; // 10
+$mdb-input-padding-small-horizontal:  0 !default; // 10
+$mdb-input-padding-large-horizontal:  0 !default;  // 16
+
+
+$mdb-input-font-size-small: ceil(($font-size-base * 0.75)) !default; // ~12px
+$mdb-input-font-size-large: ceil(($font-size-base * 1.25)) !default; // ~20px
+
+$mdb-input-line-height-small:         1.5 !default;
+$mdb-input-line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
+
+
+$mdb-input-border-radius-small:       0 !default;
+$mdb-input-border-radius-base:        0 !default;
+$mdb-input-border-radius-large:       0 !default;
+$mdb-input-border-radius-small:       0 !default;
+
+
+
+$mdb-input-font-size-base: 14px !default;
+$mdb-input-line-height-base:        $line-height-base; //1.428571429 !default; // 20/14
+
+$mdb-input-line-height-computed:    floor(($mdb-input-font-size-base * $mdb-input-line-height-base)) !default; // ~20px
+
+$mdb-input-height-base:              ($mdb-input-line-height-computed + ($mdb-input-padding-base-vertical * 2) + 2) !default;
+
+
+$mdb-input-height-small:             (floor($mdb-input-font-size-small * $mdb-input-line-height-small) + ($mdb-input-padding-small-vertical * 2) + 2) !default;
+
+
+$mdb-input-height-large:             (ceil($mdb-input-font-size-large * $mdb-input-line-height-large) + ($mdb-input-padding-large-vertical * 2) + 2) !default;
