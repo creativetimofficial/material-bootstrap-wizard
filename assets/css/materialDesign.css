@@ -1585,24 +1585,28 @@ input[type="button"]:focus {
 }
 
 .nav-pills[data-background-color="blue"] > li > a {
-  border: 1px solid #3472F7;
-  color: #3472F7;
+  border: 1px solid #00bcd4;
+  color: #00bcd4;
 }
-.nav-pills[data-background-color="azure"] > li > a {
-  border: 1px solid #2CA8FF;
-  color: #2CA8FF;
+.nav-pills[data-background-color="purple"] > li > a {
+  border: 1px solid #9c27b0;
+  color: #9c27b0;
 }
 .nav-pills[data-background-color="green"] > li > a {
-  border: 1px solid #05AE0E;
-  color: #05AE0E;
+  border: 1px solid #4caf50;
+  color: #4caf50;
 }
 .nav-pills[data-background-color="orange"] > li > a {
-  border: 1px solid #FF9500;
-  color: #FF9500;
+  border: 1px solid #ff9800;
+  color: #ff9800;
 }
 .nav-pills[data-background-color="red"] > li > a {
-  border: 1px solid #FF3B30;
-  color: #FF3B30;
+  border: 1px solid #f44336;
+  color: #f44336;
+}
+.nav-pills[data-background-color="rose"] > li > a {
+  border: 1px solid #e91e63;
+  color: #e91e63;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
@@ -1845,20 +1849,23 @@ label {
 .wizard-card .picture:hover {
   border-color: #2ca8ff;
 }
-.wizard-card[data-background-color="azzure"] .picture:hover {
-  border-color: #2CA8FF;
+.wizard-card[data-background-color="purple"] .picture:hover {
+  border-color: #9c27b0;
 }
 .wizard-card[data-background-color="green"] .picture:hover {
-  border-color: #05ae0e;
+  border-color: #4caf50;
 }
 .wizard-card[data-background-color="blue"] .picture:hover {
-  border-color: #3472f7;
+  border-color: #00bcd4;
 }
 .wizard-card[data-background-color="orange"] .picture:hover {
-  border-color: #ff9500;
+  border-color: #ff9800;
 }
 .wizard-card[data-background-color="red"] .picture:hover {
-  border-color: #ff3b30;
+  border-color: #f44336;
+}
+.wizard-card[data-background-color="rose"] .picture:hover {
+  border-color: #e91e63;
 }
 .wizard-card .picture input[type="file"] {
   cursor: pointer;

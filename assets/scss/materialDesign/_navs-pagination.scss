@@ -90,28 +90,33 @@
 
 .nav-pills{
     &[data-background-color="blue"] > li > a {
-        border: 1px solid #3472F7;
-        color: #3472F7;
+        border: 1px solid $brand-info;
+        color: $brand-info;
     }
 
-    &[data-background-color="azure"] > li > a {
-        border: 1px solid #2CA8FF;
-        color: #2CA8FF;
+    &[data-background-color="purple"] > li > a {
+        border: 1px solid $brand-primary;
+        color: $brand-primary;
     }
 
     &[data-background-color="green"] > li > a {
-        border: 1px solid #05AE0E;
-        color: #05AE0E;
+        border: 1px solid $brand-success;
+        color: $brand-success;
     }
 
     &[data-background-color="orange"] > li > a {
-        border: 1px solid #FF9500;
-        color: #FF9500;
+        border: 1px solid $brand-warning;
+        color: $brand-warning;
     }
 
     &[data-background-color="red"] > li > a {
-        border: 1px solid #FF3B30;
-        color: #FF3B30;
+        border: 1px solid $brand-danger;
+        color: $brand-danger;
+    }
+
+    &[data-background-color="rose"] > li > a {
+        border: 1px solid $brand-rose;
+        color: $brand-rose;
     }
 
     > li.active > a,

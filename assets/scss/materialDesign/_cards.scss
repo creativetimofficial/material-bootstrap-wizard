@@ -70,10 +70,10 @@ label{
         }
     }
 
-    &[data-background-color="azzure"]{
+    &[data-background-color="purple"]{
         .picture{
             &:hover{
-                border-color: #2CA8FF;
+                border-color: $brand-primary;
             }
         }
     }
@@ -81,7 +81,7 @@ label{
     &[data-background-color="green"]{
         .picture{
             &:hover{
-                border-color: #05ae0e;
+                border-color: $brand-success;
             }
         }
     }
@@ -89,7 +89,7 @@ label{
     &[data-background-color="blue"]{
         .picture{
             &:hover{
-                border-color: #3472f7;
+                border-color: $brand-info;
             }
         }
     }
@@ -97,7 +97,7 @@ label{
     &[data-background-color="orange"]{
         .picture{
             &:hover{
-                border-color: #ff9500;
+                border-color: $brand-warning;
             }
         }
     }
@@ -105,10 +105,19 @@ label{
     &[data-background-color="red"]{
         .picture{
             &:hover{
-                border-color: #ff3b30;
+                border-color: $brand-danger;
             }
         }
     }
+
+    &[data-background-color="rose"]{
+        .picture{
+            &:hover{
+                border-color: $brand-rose;
+            }
+        }
+    }
+
 
     .picture input[type="file"] {
         cursor: pointer;
