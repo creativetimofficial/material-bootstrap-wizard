@@ -74,7 +74,7 @@
             }
         }
 
-        
+
     }
 
     &[data-color="green"]{
@@ -233,6 +233,21 @@
             &.active{
                 .icon{
                     border-color: $brand-danger;
+                }
+            }
+        }
+    }
+
+    &[data-color="rose"]{
+        .nav-pills > li.active a{
+            background-color: $brand-rose;
+        }
+
+        .choice{
+            &:hover,
+            &.active{
+                .icon{
+                    border-color: $brand-rose;
                 }
             }
         }
