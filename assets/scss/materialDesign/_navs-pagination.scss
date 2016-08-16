@@ -16,7 +16,7 @@
 
 .nav-pills,
 .pagination{
-    &[data-background-color="blue"]{
+    &[data-color="blue"]{
         > li.active > a,
         > li.active > a:hover,
         > li.active > a:focus,
@@ -26,11 +26,11 @@
         > .active > span:hover,
         > .active > a:focus,
         > .active > span:focus{
-            background-color: #3472F7;
+            background-color: $brand-info;
         }
     }
 
-    &[data-background-color="azure"]{
+    &[data-color="purple"]{
         > li.active > a,
         > li.active > a:hover,
         > li.active > a:focus,
@@ -40,11 +40,11 @@
         > .active > span:hover,
         > .active > a:focus,
         > .active > span:focus{
-            background-color: #2CA8FF;
+            background-color: $brand-primary;
         }
     }
 
-    &[data-background-color="green"]{
+    &[data-color="green"]{
         > li.active > a,
         > li.active > a:hover,
         > li.active > a:focus,
@@ -54,11 +54,11 @@
         > .active > span:hover,
         > .active > a:focus,
         > .active > span:focus{
-            background-color: #05AE0E;
+            background-color: $brand-success;
         }
     }
 
-    &[data-background-color="orange"]{
+    &[data-color="orange"]{
         > li.active > a,
         > li.active > a:hover,
         > li.active > a:focus,
@@ -68,11 +68,11 @@
         > .active > span:hover,
         > .active > a:focus,
         > .active > span:focus{
-            background-color: #FF9500;
+            background-color: $brand-warning;
         }
     }
 
-    &[data-background-color="red"]{
+    &[data-color="red"]{
         > li.active > a,
         > li.active > a:hover,
         > li.active > a:focus,
@@ -82,39 +82,53 @@
         > .active > span:hover,
         > .active > a:focus,
         > .active > span:focus{
-            background-color: #FF3B30;
+            background-color: $brand-danger;
+        }
+    }
+
+    &[data-color="rose"]{
+        > li.active > a,
+        > li.active > a:hover,
+        > li.active > a:focus,
+        > .active > a,
+        > .active > span,
+        > .active > a:hover,
+        > .active > span:hover,
+        > .active > a:focus,
+        > .active > span:focus{
+            background-color: $brand-rose;
         }
     }
 }
 
 
 .nav-pills{
-    &[data-background-color="blue"] > li > a {
+    &[data-color="blue"] > li > a {
         border: 1px solid $brand-info;
         color: $brand-info;
     }
 
-    &[data-background-color="purple"] > li > a {
+    &[data-color="purple"] > li > a {
         border: 1px solid $brand-primary;
         color: $brand-primary;
     }
 
-    &[data-background-color="green"] > li > a {
+    &[data-color="green"] > li > a {
         border: 1px solid $brand-success;
         color: $brand-success;
     }
 
-    &[data-background-color="orange"] > li > a {
+    &[data-color="orange"] > li > a {
         border: 1px solid $brand-warning;
         color: $brand-warning;
     }
 
-    &[data-background-color="red"] > li > a {
+    &[data-color="red"] > li > a {
         border: 1px solid $brand-danger;
         color: $brand-danger;
     }
 
-    &[data-background-color="rose"] > li > a {
+    &[data-color="rose"] > li > a {
         border: 1px solid $brand-rose;
         color: $brand-rose;
     }

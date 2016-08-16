@@ -70,7 +70,7 @@ label{
         }
     }
 
-    &[data-background-color="purple"]{
+    &[data-color="purple"]{
         .picture{
             &:hover{
                 border-color: $brand-primary;
@@ -78,7 +78,7 @@ label{
         }
     }
 
-    &[data-background-color="green"]{
+    &[data-color="green"]{
         .picture{
             &:hover{
                 border-color: $brand-success;
@@ -86,7 +86,7 @@ label{
         }
     }
 
-    &[data-background-color="blue"]{
+    &[data-color="blue"]{
         .picture{
             &:hover{
                 border-color: $brand-info;
@@ -94,7 +94,7 @@ label{
         }
     }
 
-    &[data-background-color="orange"]{
+    &[data-color="orange"]{
         .picture{
             &:hover{
                 border-color: $brand-warning;
@@ -102,7 +102,7 @@ label{
         }
     }
 
-    &[data-background-color="red"]{
+    &[data-color="red"]{
         .picture{
             &:hover{
                 border-color: $brand-danger;
@@ -110,7 +110,7 @@ label{
         }
     }
 
-    &[data-background-color="rose"]{
+    &[data-color="rose"]{
         .picture{
             &:hover{
                 border-color: $brand-rose;
@@ -164,7 +164,7 @@ label{
         font-size: 12px;
     }
 
-    &[data-background-color="green"]{
+    &[data-color="green"]{
         .nav-pills > li.active a{
             background-color: #05ae0e;
         }
@@ -179,7 +179,7 @@ label{
         }
     }
 
-    &[data-background-color="azzure"]{
+    &[data-color="azzure"]{
         .nav-pills > li.active a{
             background-color: #2CA8FF;
         }
@@ -194,7 +194,7 @@ label{
         }
     }
 
-    &[data-background-color="blue"]{
+    &[data-color="blue"]{
         .nav-pills > li.active a{
             background-color: #3472f7;
         }
@@ -209,7 +209,7 @@ label{
         }
     }
 
-    &[data-background-color="orange"]{
+    &[data-color="orange"]{
         .nav-pills > li.active a{
             background-color: #ff9500;
         }
@@ -224,7 +224,7 @@ label{
         }
     }
 
-    &[data-background-color="red"]{
+    &[data-color="red"]{
         .nav-pills > li.active a{
             background-color: #ff3b30;
         }
