@@ -82,8 +82,13 @@ $(document).ready(function(){
         }
     });
 
-    $height = $(document).height();
-    $('.set-full-height').css('height',$height);
+    if($('.wizard-footer').hasClass('height-wizard')){
+
+        $('[type="button"]').on('click', function(){
+            $('.set-full-height').css('height', 'auto');
+        });
+
+    }
 
 
 });
