@@ -185,19 +185,19 @@
 }
 
 .text-primary, .text-primary:hover{
-    color: #1D62F0;
+    color: $brand-primary;
 }
 .text-info, .text-info:hover{
-    color: #109CFF;
+    color: $brand-info;
 }
 .text-success, .text-success:hover{
-    color: #0C9C14;
+    color: $brand-success;
 }
 .text-warning, .text-warning:hover{
-    color: #ED8D00;
+    color: $brand-warning;
 }
 .text-danger, .text-danger:hover{
-    color: #EE2D20;
+    color: $brand-danger;
 }
 .modal-header {
     border: 0 none;

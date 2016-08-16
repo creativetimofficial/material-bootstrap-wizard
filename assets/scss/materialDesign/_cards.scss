@@ -77,6 +77,26 @@
             }
         }
 
+        .nav-pills > li.active a{
+            background-color: $brand-primary;
+        }
+
+        .choice{
+            &:hover,
+            &.active{
+                .icon{
+                    border-color: $brand-primary;
+                }
+            }
+        }
+
+        .form-group{
+            &.is-focused{
+                .form-control{
+                    background-image: linear-gradient($brand-primary, $brand-primary), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
+                }
+            }
+        }
 
     }
 
@@ -84,6 +104,27 @@
         .picture{
             &:hover{
                 border-color: $brand-success;
+            }
+        }
+
+        .nav-pills > li.active a{
+            background-color: $brand-success;
+        }
+
+        .choice{
+            &:hover,
+            &.active{
+                .icon{
+                    border-color: $brand-success;
+                }
+            }
+        }
+
+        .form-group{
+            &.is-focused{
+                .form-control{
+                    background-image: linear-gradient($brand-success, $brand-success), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
+                }
             }
         }
     }
@@ -94,12 +135,54 @@
                 border-color: $brand-info;
             }
         }
+
+        .nav-pills > li.active a{
+            background-color: $brand-info;
+        }
+
+        .choice{
+            &:hover,
+            &.active{
+                .icon{
+                    border-color: $brand-info;
+                }
+            }
+        }
+
+        .form-group{
+            &.is-focused{
+                .form-control{
+                    background-image: linear-gradient($brand-info, $brand-info), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
+                }
+            }
+        }
     }
 
     &[data-color="orange"]{
         .picture{
             &:hover{
                 border-color: $brand-warning;
+            }
+        }
+
+        .nav-pills > li.active a{
+            background-color: $brand-warning;
+        }
+
+        .choice{
+            &:hover,
+            &.active{
+                .icon{
+                    border-color: $brand-warning;
+                }
+            }
+        }
+
+        .form-group{
+            &.is-focused{
+                .form-control{
+                    background-image: linear-gradient($brand-warning, $brand-warning), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
+                }
             }
         }
     }
@@ -110,12 +193,54 @@
                 border-color: $brand-danger;
             }
         }
+
+        .nav-pills > li.active a{
+            background-color: $brand-danger;
+        }
+
+        .choice{
+            &:hover,
+            &.active{
+                .icon{
+                    border-color: $brand-danger;
+                }
+            }
+        }
+
+        .form-group{
+            &.is-focused{
+                .form-control{
+                    background-image: linear-gradient($brand-danger, $brand-danger), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
+                }
+            }
+        }
     }
 
     &[data-color="rose"]{
         .picture{
             &:hover{
                 border-color: $brand-rose;
+            }
+        }
+
+        .nav-pills > li.active a{
+            background-color: $brand-rose;
+        }
+
+        .choice{
+            &:hover,
+            &.active{
+                .icon{
+                    border-color: $brand-rose;
+                }
+            }
+        }
+
+        .form-group{
+            &.is-focused{
+                .form-control{
+                    background-image: linear-gradient($brand-rose, $brand-rose), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
+                }
             }
         }
     }
@@ -164,96 +289,6 @@
         background-color: #999999;
         color: #FFFFFF !important;
         font-size: 12px;
-    }
-
-    &[data-color="green"]{
-        .nav-pills > li.active a{
-            background-color: $brand-success;
-        }
-
-        .choice{
-            &:hover,
-            &.active{
-                .icon{
-                    border-color: $brand-success;
-                }
-            }
-        }
-    }
-
-    &[data-color="purple"]{
-        .nav-pills > li.active a{
-            background-color: $brand-primary;
-        }
-
-        .choice{
-            &:hover,
-            &.active{
-                .icon{
-                    border-color: $brand-primary;
-                }
-            }
-        }
-    }
-
-    &[data-color="blue"]{
-        .nav-pills > li.active a{
-            background-color: $brand-info;
-        }
-
-        .choice{
-            &:hover,
-            &.active{
-                .icon{
-                    border-color: $brand-info;
-                }
-            }
-        }
-    }
-
-    &[data-color="orange"]{
-        .nav-pills > li.active a{
-            background-color: $brand-warning;
-        }
-
-        .choice{
-            &:hover,
-            &.active{
-                .icon{
-                    border-color: $brand-warning;
-                }
-            }
-        }
-    }
-
-    &[data-color="red"]{
-        .nav-pills > li.active a{
-            background-color: $brand-danger;
-        }
-
-        .choice{
-            &:hover,
-            &.active{
-                .icon{
-                    border-color: $brand-danger;
-                }
-            }
-        }
-    }
-
-    &[data-color="rose"]{
-        .nav-pills > li.active a{
-            background-color: $brand-rose;
-        }
-
-        .choice{
-            &:hover,
-            &.active{
-                .icon{
-                    border-color: $brand-rose;
-                }
-            }
-        }
     }
 
     .nav-pills > li > a{
