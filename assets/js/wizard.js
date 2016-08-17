@@ -82,14 +82,7 @@ $(document).ready(function(){
         }
     });
 
-    if($('.wizard-footer').hasClass('height-wizard')){
-
-        $('[type="button"]').on('click', function(){
-            $('.set-full-height').css('height', 'auto');
-        });
-
-    }
-
+    $('.set-full-height').css('height', 'auto');
 
 });
 
