@@ -91,10 +91,8 @@
         }
 
         .form-group{
-            &.is-focused{
-                .form-control{
-                    background-image: linear-gradient($brand-primary, $brand-primary), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
-                }
+            .form-control{
+                background-image: linear-gradient($brand-primary, $brand-primary), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
             }
         }
 
@@ -121,10 +119,8 @@
         }
 
         .form-group{
-            &.is-focused{
-                .form-control{
-                    background-image: linear-gradient($brand-success, $brand-success), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
-                }
+            .form-control{
+                background-image: linear-gradient($brand-success, $brand-success), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
             }
         }
     }
@@ -150,10 +146,8 @@
         }
 
         .form-group{
-            &.is-focused{
-                .form-control{
-                    background-image: linear-gradient($brand-info, $brand-info), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
-                }
+            .form-control{
+                background-image: linear-gradient($brand-info, $brand-info), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
             }
         }
     }
@@ -179,10 +173,8 @@
         }
 
         .form-group{
-            &.is-focused{
-                .form-control{
-                    background-image: linear-gradient($brand-warning, $brand-warning), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
-                }
+            .form-control{
+                background-image: linear-gradient($brand-warning, $brand-warning), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
             }
         }
     }
@@ -208,10 +200,8 @@
         }
 
         .form-group{
-            &.is-focused{
-                .form-control{
-                    background-image: linear-gradient($brand-danger, $brand-danger), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
-                }
+            .form-control{
+                background-image: linear-gradient($brand-danger, $brand-danger), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
             }
         }
     }
@@ -237,10 +227,8 @@
         }
 
         .form-group{
-            &.is-focused{
-                .form-control{
-                    background-image: linear-gradient($brand-rose, $brand-rose), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
-                }
+            .form-control{
+                background-image: linear-gradient($brand-rose, $brand-rose), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
             }
         }
     }
