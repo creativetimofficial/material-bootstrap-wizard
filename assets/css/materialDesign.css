@@ -145,7 +145,7 @@ h2.title {
 
 .card {
   background-color: #FFFFFF;
-  padding: 10px 0 20px;
+  padding: 10px 0;
   width: 100%;
   border-radius: 6px;
   color: rgba(0,0,0, 0.87);
@@ -181,10 +181,6 @@ h2.title {
 
 .wizard-card {
   min-height: 410px;
-  background-color: #FFFFFF;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  padding: 10px 0;
   transition: all 0.2s;
   -webkit-transition: all 0.2s;
 }
@@ -298,7 +294,7 @@ h2.title {
   padding: 20px 10px;
 }
 .wizard-card .wizard-footer {
-  padding: 0 10px;
+  padding: 0 20px;
 }
 .wizard-card .disabled {
   display: none;
