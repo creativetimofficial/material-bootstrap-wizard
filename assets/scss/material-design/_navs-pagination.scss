@@ -19,8 +19,7 @@
     }
 
     > li.active{
-       a{
-           @include shadow-big-color($brand-primary);
+        a{
            border-radius: 4px;
         }
 

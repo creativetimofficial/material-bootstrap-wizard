@@ -75,6 +75,7 @@
 
         .nav-pills > li.active a{
             background-color: $brand-primary;
+             @include shadow-big-color($brand-primary);
         }
 
         .choice{
@@ -103,6 +104,7 @@
 
         .nav-pills > li.active a{
             background-color: $brand-success;
+             @include shadow-big-color($brand-success);
         }
 
         .choice{
@@ -130,6 +132,7 @@
 
         .nav-pills > li.active a{
             background-color: $brand-info;
+            @include shadow-big-color($brand-info);
         }
 
         .choice{
@@ -152,6 +155,7 @@
         .picture{
             &:hover{
                 border-color: $brand-warning;
+                 @include shadow-big-color($brand-warning);
             }
         }
 
@@ -184,6 +188,7 @@
 
         .nav-pills > li.active a{
             background-color: $brand-danger;
+             @include shadow-big-color($brand-danger);
         }
 
         .choice{
@@ -211,6 +216,7 @@
 
         .nav-pills > li.active a{
             background-color: $brand-rose;
+             @include shadow-big-color($brand-rose);
         }
 
         .choice{
