@@ -9,7 +9,7 @@ $(document).ready(function(){
     $('[rel="tooltip"]').tooltip();
 
     $('.wizard-card').bootstrapWizard({
-        'tabClass': 'nav nav-pills',
+        'tabClass': 'nav nav-pills nav-pills-icons',
         'nextSelector': '.btn-next',
         'previousSelector': '.btn-previous',
 

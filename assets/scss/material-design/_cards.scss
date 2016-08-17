@@ -266,33 +266,8 @@
         text-align: center;
     }
 
-    .nav-pills > li a {
-        border: 0 !important;
-        text-transform: uppercase;
-        background-color: #999999;
-        color: #FFFFFF !important;
-        font-size: 12px;
-    }
-
-    .nav-pills > li > a{
-        &:focus,
-        &:hover{
-            background-color: #999999;
-            cursor: default;
-        }
-    }
-
     .btn{
         text-transform: uppercase;
-    }
-
-    .nav-pills > li:first-child > a {
-        border-radius: 0;
-        margin: 0;
-    }
-
-    .nav-pills > li:last-child > a{
-        border-radius: 0;
     }
 
     .info-text{

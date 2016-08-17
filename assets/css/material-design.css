@@ -143,233 +143,6 @@ h2.title {
   color: #999999;
 }
 
-.card {
-  background-color: #FFFFFF;
-  padding: 10px 0;
-  width: 100%;
-  border-radius: 6px;
-  color: rgba(0,0,0, 0.87);
-  background: #fff;
-}
-
-.pick-class-label {
-  border-radius: 8px;
-  color: #ffffff;
-  cursor: pointer;
-  display: inline;
-  font-size: 75%;
-  font-weight: bold;
-  line-height: 1;
-  margin-right: 10px;
-  padding: 15px 23px;
-  text-align: center;
-  vertical-align: baseline;
-  white-space: nowrap;
-}
-
-/*      Here the code for the wizard           */
-.image-container {
-  height: 100vh;
-  background-position: center center;
-  background-size: cover;
-}
-
-.wizard-container {
-  padding-top: 100px;
-  z-index: 3;
-}
-
-.wizard-card {
-  min-height: 410px;
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-}
-.wizard-card .picture-container {
-  position: relative;
-  cursor: pointer;
-  text-align: center;
-}
-.wizard-card .picture {
-  width: 106px;
-  height: 106px;
-  background-color: #999999;
-  border: 4px solid #CCCCCC;
-  color: #FFFFFF;
-  border-radius: 50%;
-  margin: 5px auto;
-  overflow: hidden;
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-}
-.wizard-card .picture:hover {
-  border-color: #2ca8ff;
-}
-.wizard-card[data-color="purple"] .picture:hover {
-  border-color: #9c27b0;
-}
-.wizard-card[data-color="purple"] .nav-pills > li.active a {
-  background-color: #9c27b0;
-}
-.wizard-card[data-color="purple"] .choice:hover .icon, .wizard-card[data-color="purple"] .choice.active .icon {
-  border-color: #9c27b0;
-}
-.wizard-card[data-color="purple"] .form-group .form-control {
-  background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2);
-}
-.wizard-card[data-color="green"] .picture:hover {
-  border-color: #4caf50;
-}
-.wizard-card[data-color="green"] .nav-pills > li.active a {
-  background-color: #4caf50;
-}
-.wizard-card[data-color="green"] .choice:hover .icon, .wizard-card[data-color="green"] .choice.active .icon {
-  border-color: #4caf50;
-}
-.wizard-card[data-color="green"] .form-group .form-control {
-  background-image: linear-gradient(#4caf50, #4caf50), linear-gradient(#D2D2D2, #D2D2D2);
-}
-.wizard-card[data-color="blue"] .picture:hover {
-  border-color: #00bcd4;
-}
-.wizard-card[data-color="blue"] .nav-pills > li.active a {
-  background-color: #00bcd4;
-}
-.wizard-card[data-color="blue"] .choice:hover .icon, .wizard-card[data-color="blue"] .choice.active .icon {
-  border-color: #00bcd4;
-}
-.wizard-card[data-color="blue"] .form-group .form-control {
-  background-image: linear-gradient(#00bcd4, #00bcd4), linear-gradient(#D2D2D2, #D2D2D2);
-}
-.wizard-card[data-color="orange"] .picture:hover {
-  border-color: #ff9800;
-}
-.wizard-card[data-color="orange"] .nav-pills > li.active a {
-  background-color: #ff9800;
-}
-.wizard-card[data-color="orange"] .choice:hover .icon, .wizard-card[data-color="orange"] .choice.active .icon {
-  border-color: #ff9800;
-}
-.wizard-card[data-color="orange"] .form-group .form-control {
-  background-image: linear-gradient(#ff9800, #ff9800), linear-gradient(#D2D2D2, #D2D2D2);
-}
-.wizard-card[data-color="red"] .picture:hover {
-  border-color: #f44336;
-}
-.wizard-card[data-color="red"] .nav-pills > li.active a {
-  background-color: #f44336;
-}
-.wizard-card[data-color="red"] .choice:hover .icon, .wizard-card[data-color="red"] .choice.active .icon {
-  border-color: #f44336;
-}
-.wizard-card[data-color="red"] .form-group .form-control {
-  background-image: linear-gradient(#f44336, #f44336), linear-gradient(#D2D2D2, #D2D2D2);
-}
-.wizard-card[data-color="rose"] .picture:hover {
-  border-color: #e91e63;
-}
-.wizard-card[data-color="rose"] .nav-pills > li.active a {
-  background-color: #e91e63;
-}
-.wizard-card[data-color="rose"] .choice:hover .icon, .wizard-card[data-color="rose"] .choice.active .icon {
-  border-color: #e91e63;
-}
-.wizard-card[data-color="rose"] .form-group .form-control {
-  background-image: linear-gradient(#e91e63, #e91e63), linear-gradient(#D2D2D2, #D2D2D2);
-}
-.wizard-card .picture input[type="file"] {
-  cursor: pointer;
-  display: block;
-  height: 100%;
-  left: 0;
-  opacity: 0 !important;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-.wizard-card .picture-src {
-  width: 100%;
-}
-.wizard-card .tab-content {
-  min-height: 340px;
-  padding: 20px 10px;
-}
-.wizard-card .wizard-footer {
-  padding: 0 20px;
-}
-.wizard-card .disabled {
-  display: none;
-}
-.wizard-card .wizard-header {
-  text-align: center;
-}
-.wizard-card .nav-pills > li {
-  text-align: center;
-}
-.wizard-card .nav-pills > li a {
-  border: 0 !important;
-  text-transform: uppercase;
-  background-color: #999999;
-  color: #FFFFFF !important;
-  font-size: 12px;
-}
-.wizard-card .nav-pills > li > a:focus, .wizard-card .nav-pills > li > a:hover {
-  background-color: #999999;
-  cursor: default;
-}
-.wizard-card .btn {
-  text-transform: uppercase;
-}
-.wizard-card .nav-pills > li:first-child > a {
-  border-radius: 0;
-  margin: 0;
-}
-.wizard-card .nav-pills > li:last-child > a {
-  border-radius: 0;
-}
-.wizard-card .info-text {
-  text-align: center;
-  font-weight: 300;
-  margin: 10px 0 30px;
-}
-.wizard-card .choice {
-  text-align: center;
-  cursor: pointer;
-  margin-top: 20px;
-}
-.wizard-card .choice .icon {
-  text-align: center;
-  vertical-align: middle;
-  height: 116px;
-  width: 116px;
-  border-radius: 50%;
-  background-color: #999999;
-  color: #FFFFFF;
-  margin: 0 auto 20px;
-  border: 4px solid #CCCCCC;
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-}
-.wizard-card .choice i {
-  font-size: 30px;
-  line-height: 111px;
-}
-.wizard-card .choice:hover .icon, .wizard-card .choice.active .icon {
-  border-color: #2ca8ff;
-}
-.wizard-card .choice input[type="radio"],
-.wizard-card .choice input[type="checkbox"] {
-  position: absolute;
-  left: -10000px;
-  z-index: -1;
-}
-.wizard-card .btn-finish {
-  display: none;
-}
-.wizard-card .description {
-  color: #999999;
-  font-size: 14px;
-}
-
 legend {
   margin-bottom: 20px;
   font-size: 21px;
@@ -1251,20 +1024,251 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
   position: relative;
 }
 
+.card {
+  background-color: #FFFFFF;
+  padding: 10px 0;
+  width: 100%;
+  border-radius: 6px;
+  color: rgba(0,0,0, 0.87);
+  background: #fff;
+}
+
+.pick-class-label {
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  margin-right: 10px;
+  padding: 15px 23px;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+/*      Here the code for the wizard           */
+.image-container {
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+}
+
+.wizard-container {
+  padding-top: 100px;
+  z-index: 3;
+}
+
+.wizard-card {
+  min-height: 410px;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+.wizard-card .picture-container {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+.wizard-card .picture {
+  width: 106px;
+  height: 106px;
+  background-color: #999999;
+  border: 4px solid #CCCCCC;
+  color: #FFFFFF;
+  border-radius: 50%;
+  margin: 5px auto;
+  overflow: hidden;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+.wizard-card .picture:hover {
+  border-color: #2ca8ff;
+}
+.wizard-card[data-color="purple"] .picture:hover {
+  border-color: #9c27b0;
+}
+.wizard-card[data-color="purple"] .nav-pills > li.active a {
+  background-color: #9c27b0;
+}
+.wizard-card[data-color="purple"] .choice:hover .icon, .wizard-card[data-color="purple"] .choice.active .icon {
+  border-color: #9c27b0;
+}
+.wizard-card[data-color="purple"] .form-group .form-control {
+  background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2);
+}
+.wizard-card[data-color="green"] .picture:hover {
+  border-color: #4caf50;
+}
+.wizard-card[data-color="green"] .nav-pills > li.active a {
+  background-color: #4caf50;
+}
+.wizard-card[data-color="green"] .choice:hover .icon, .wizard-card[data-color="green"] .choice.active .icon {
+  border-color: #4caf50;
+}
+.wizard-card[data-color="green"] .form-group .form-control {
+  background-image: linear-gradient(#4caf50, #4caf50), linear-gradient(#D2D2D2, #D2D2D2);
+}
+.wizard-card[data-color="blue"] .picture:hover {
+  border-color: #00bcd4;
+}
+.wizard-card[data-color="blue"] .nav-pills > li.active a {
+  background-color: #00bcd4;
+}
+.wizard-card[data-color="blue"] .choice:hover .icon, .wizard-card[data-color="blue"] .choice.active .icon {
+  border-color: #00bcd4;
+}
+.wizard-card[data-color="blue"] .form-group .form-control {
+  background-image: linear-gradient(#00bcd4, #00bcd4), linear-gradient(#D2D2D2, #D2D2D2);
+}
+.wizard-card[data-color="orange"] .picture:hover {
+  border-color: #ff9800;
+}
+.wizard-card[data-color="orange"] .nav-pills > li.active a {
+  background-color: #ff9800;
+}
+.wizard-card[data-color="orange"] .choice:hover .icon, .wizard-card[data-color="orange"] .choice.active .icon {
+  border-color: #ff9800;
+}
+.wizard-card[data-color="orange"] .form-group .form-control {
+  background-image: linear-gradient(#ff9800, #ff9800), linear-gradient(#D2D2D2, #D2D2D2);
+}
+.wizard-card[data-color="red"] .picture:hover {
+  border-color: #f44336;
+}
+.wizard-card[data-color="red"] .nav-pills > li.active a {
+  background-color: #f44336;
+}
+.wizard-card[data-color="red"] .choice:hover .icon, .wizard-card[data-color="red"] .choice.active .icon {
+  border-color: #f44336;
+}
+.wizard-card[data-color="red"] .form-group .form-control {
+  background-image: linear-gradient(#f44336, #f44336), linear-gradient(#D2D2D2, #D2D2D2);
+}
+.wizard-card[data-color="rose"] .picture:hover {
+  border-color: #e91e63;
+}
+.wizard-card[data-color="rose"] .nav-pills > li.active a {
+  background-color: #e91e63;
+}
+.wizard-card[data-color="rose"] .choice:hover .icon, .wizard-card[data-color="rose"] .choice.active .icon {
+  border-color: #e91e63;
+}
+.wizard-card[data-color="rose"] .form-group .form-control {
+  background-image: linear-gradient(#e91e63, #e91e63), linear-gradient(#D2D2D2, #D2D2D2);
+}
+.wizard-card .picture input[type="file"] {
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0 !important;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.wizard-card .picture-src {
+  width: 100%;
+}
+.wizard-card .tab-content {
+  min-height: 340px;
+  padding: 20px 10px;
+}
+.wizard-card .wizard-footer {
+  padding: 0 20px;
+}
+.wizard-card .disabled {
+  display: none;
+}
+.wizard-card .wizard-header {
+  text-align: center;
+}
+.wizard-card .nav-pills > li {
+  text-align: center;
+}
+.wizard-card .btn {
+  text-transform: uppercase;
+}
+.wizard-card .info-text {
+  text-align: center;
+  font-weight: 300;
+  margin: 10px 0 30px;
+}
+.wizard-card .choice {
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.wizard-card .choice .icon {
+  text-align: center;
+  vertical-align: middle;
+  height: 116px;
+  width: 116px;
+  border-radius: 50%;
+  background-color: #999999;
+  color: #FFFFFF;
+  margin: 0 auto 20px;
+  border: 4px solid #CCCCCC;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+.wizard-card .choice i {
+  font-size: 30px;
+  line-height: 111px;
+}
+.wizard-card .choice:hover .icon, .wizard-card .choice.active .icon {
+  border-color: #2ca8ff;
+}
+.wizard-card .choice input[type="radio"],
+.wizard-card .choice input[type="checkbox"] {
+  position: absolute;
+  left: -10000px;
+  z-index: -1;
+}
+.wizard-card .btn-finish {
+  display: none;
+}
+.wizard-card .description {
+  color: #999999;
+  font-size: 14px;
+}
+
 /*            Navigation menu                */
+.nav-pills {
+  background-color: rgba(200, 200, 200, 0.2);
+}
 .nav-pills > li + li {
   margin-left: 0;
 }
-
 .nav-pills > li > a {
-  border: 1px solid #2CA8FF;
+  border: 0 !important;
   border-radius: 0;
-  color: #2CA8FF;
-  margin-left: -1px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  min-width: 100px;
+  text-align: center;
+  color: #555555;
+}
+.nav-pills > li.active a {
+  box-shadow: 0 16px 26px -10px rgba(156, 39, 176, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(156, 39, 176, 0.2);
+  border-radius: 4px;
+}
+.nav-pills > li.active:last-child a {
+  margin-right: -8px;
+}
+.nav-pills > li.active:first-child a {
+  margin-left: -8px;
+}
+.nav-pills > li i {
+  display: block;
+  font-size: 30px;
+  padding: 15px 0;
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
-  background-color: #F5F5F5;
+  background-color: transparent;
 }
 
 .nav-pills[data-color="blue"] > li.active > a,
@@ -1417,13 +1421,6 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 .nav-pills > li.active > a:focus {
   background-color: #2CA8FF;
   color: #FFFFFF;
-}
-.nav-pills > li:first-child > a {
-  border-radius: 4px 0 0 4px;
-  margin: 0;
-}
-.nav-pills > li:last-child > a {
-  border-radius: 0 4px 4px 0;
 }
 
 .pagination.no-border > li > a,
