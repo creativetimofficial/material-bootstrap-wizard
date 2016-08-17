@@ -144,7 +144,10 @@ function validateFirstStep(){
 			topic: "Please select at least 2 topics"
 */
 
-		}
+		},
+        errorPlacement: function(error, element) {
+            $(element).parent('div').addClass('has-error');
+         }
 	});
 
 	if(!$(".wizard-card form").valid()){
