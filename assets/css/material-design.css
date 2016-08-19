@@ -143,6 +143,19 @@ h2.title {
   color: #999999;
 }
 
+.tab-animation, .wizard-card[data-color="purple"] .moving-tab, .wizard-card[data-color="green"] .moving-tab, .wizard-card[data-color="blue"] .moving-tab, .wizard-card[data-color="orange"] .moving-tab, .wizard-card[data-color="red"] .moving-tab, .wizard-card[data-color="rose"] .moving-tab {
+  position: absolute;
+  text-align: center;
+  padding: 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  top: -4px;
+  left: 0px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
 .card {
   background-color: #FFFFFF;
   padding: 10px 0;
@@ -181,8 +194,6 @@ h2.title {
 
 .wizard-card {
   min-height: 410px;
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
 }
 .wizard-card .picture-container {
   position: relative;
@@ -208,6 +219,9 @@ h2.title {
   border-color: #9c27b0;
 }
 .wizard-card[data-color="purple"] .nav-pills > li.active a {
+  background-color: transparent;
+}
+.wizard-card[data-color="purple"] .moving-tab {
   background-color: #9c27b0;
   box-shadow: 0 16px 26px -10px rgba(156, 39, 176, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(156, 39, 176, 0.2);
 }
@@ -221,6 +235,9 @@ h2.title {
   border-color: #4caf50;
 }
 .wizard-card[data-color="green"] .nav-pills > li.active a {
+  background-color: transparent;
+}
+.wizard-card[data-color="green"] .moving-tab {
   background-color: #4caf50;
   box-shadow: 0 16px 26px -10px rgba(76, 175, 80, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(76, 175, 80, 0.2);
 }
@@ -234,6 +251,9 @@ h2.title {
   border-color: #00bcd4;
 }
 .wizard-card[data-color="blue"] .nav-pills > li.active a {
+  background-color: transparent;
+}
+.wizard-card[data-color="blue"] .moving-tab {
   background-color: #00bcd4;
   box-shadow: 0 16px 26px -10px rgba(0, 188, 212, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 188, 212, 0.2);
 }
@@ -245,10 +265,13 @@ h2.title {
 }
 .wizard-card[data-color="orange"] .picture:hover {
   border-color: #ff9800;
-  box-shadow: 0 16px 26px -10px rgba(255, 152, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(255, 152, 0, 0.2);
 }
 .wizard-card[data-color="orange"] .nav-pills > li.active a {
+  background-color: transparent;
+}
+.wizard-card[data-color="orange"] .moving-tab {
   background-color: #ff9800;
+  box-shadow: 0 16px 26px -10px rgba(255, 152, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(255, 152, 0, 0.2);
 }
 .wizard-card[data-color="orange"] .choice:hover .icon, .wizard-card[data-color="orange"] .choice.active .icon {
   border-color: #ff9800;
@@ -260,6 +283,9 @@ h2.title {
   border-color: #f44336;
 }
 .wizard-card[data-color="red"] .nav-pills > li.active a {
+  background-color: transparent;
+}
+.wizard-card[data-color="red"] .moving-tab {
   background-color: #f44336;
   box-shadow: 0 16px 26px -10px rgba(244, 67, 54, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2);
 }
@@ -273,6 +299,9 @@ h2.title {
   border-color: #e91e63;
 }
 .wizard-card[data-color="rose"] .nav-pills > li.active a {
+  background-color: transparent;
+}
+.wizard-card[data-color="rose"] .moving-tab {
   background-color: #e91e63;
   box-shadow: 0 16px 26px -10px rgba(233, 30, 99, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(233, 30, 99, 0.2);
 }
@@ -1249,22 +1278,13 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 .nav-pills > li > a {
   border: 0 !important;
   border-radius: 0;
-  line-height: 24px;
+  line-height: 18px;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 500;
   min-width: 100px;
   text-align: center;
-  color: #555555;
-}
-.nav-pills > li.active a {
-  border-radius: 4px;
-}
-.nav-pills > li.active:last-child a {
-  margin-right: -8px;
-}
-.nav-pills > li.active:first-child a {
-  margin-left: -8px;
+  color: #555555 !important;
 }
 .nav-pills > li i {
   display: block;
@@ -1425,7 +1445,6 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   background-color: #2CA8FF;
-  color: #FFFFFF;
 }
 
 .pagination.no-border > li > a,
@@ -1476,6 +1495,10 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 
 .modal-header {
   border: 0 none;
+}
+
+.wrapper {
+  position: relative;
 }
 
 .popover, .tooltip-inner {
