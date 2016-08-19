@@ -55,14 +55,14 @@ $(document).ready(function(){
               if($display_width < 600 && $total > 3){
                   $width = 50;
               }
-              console.log('aici intra in init');
+
               refreshAnimation($wizard, index);
 
               $('.moving-tab').css({
                   '-webkit-transition':'transform 0s'
               });
 
-              navigation.find('li').css('width',$width + '%');
+               navigation.find('li').css('width',$width + '%');
 
            },
 
@@ -92,7 +92,6 @@ $(document).ready(function(){
                     $('.moving-tab').text(button_text);
                 }, 200);
 
-                console.log('aici in tabshow');
                 refreshAnimation($wizard, index);
             }
 	  	});
