@@ -9,7 +9,7 @@ $(document).ready(function(){
     $('[rel="tooltip"]').tooltip();
 
     $('.wizard-card').bootstrapWizard({
-        'tabClass': 'nav nav-pills nav-pills-icons',
+        'tabClass': 'nav nav-pills',
         'nextSelector': '.btn-next',
         'previousSelector': '.btn-previous',
 
@@ -18,12 +18,19 @@ $(document).ready(function(){
            //check number of tabs and fill the entire row
            var $total = navigation.find('li').length;
            $width = 100/$total;
+           var $wizard = navigation.closest('.wizard-card');
 
            $display_width = $(document).width();
 
            if($display_width < 600 && $total > 3){
                $width = 50;
            }
+           console.log('aici intra in init');
+           refreshAnimation($wizard, index);
+
+           $('.moving-tab').css({
+               '-webkit-transition':'transform 0s'
+           });
 
            navigation.find('li').css('width',$width + '%');
 
@@ -46,16 +53,25 @@ $(document).ready(function(){
             var $total = navigation.find('li').length;
             var $current = index+1;
 
-            var wizard = navigation.closest('.wizard-card');
+            var $wizard = navigation.closest('.wizard-card');
 
             // If it's the last tab then hide the last button and show the finish instead
             if($current >= $total) {
-                $(wizard).find('.btn-next').hide();
-                $(wizard).find('.btn-finish').show();
+                $($wizard).find('.btn-next').hide();
+                $($wizard).find('.btn-finish').show();
             } else {
-                $(wizard).find('.btn-next').show();
-                $(wizard).find('.btn-finish').hide();
+                $($wizard).find('.btn-next').show();
+                $($wizard).find('.btn-finish').hide();
             }
+
+            button_text = navigation.find('li:nth-child(' + $current + ') a').html();
+
+            setTimeout(function(){
+                $('.moving-tab').text(button_text);
+            }, 200);
+
+            console.log('aici in tabshow');
+            refreshAnimation($wizard, index);
         }
     });
 
@@ -96,6 +112,8 @@ function validateFirstStep(){
 				required: true,
 				email: true
 			}
+
+
 
 /*  other possible input validations
 			,username: {
@@ -149,12 +167,11 @@ function validateFirstStep(){
             $(element).parent('div').addClass('has-error');
          }
 	});
-
+// '-webkit-transition':'all 500ms linear'
 	if(!$(".wizard-card form").valid()){
     	//form is invalid
     	return false;
 	}
-
 	return true;
 }
 
@@ -181,7 +198,6 @@ function validateSecondStep(){
 function validateThirdStep(){
     //code here for third step
 
-
 }
 
  //Function to show image before upload
@@ -195,4 +211,40 @@ function readURL(input) {
         }
         reader.readAsDataURL(input.files[0]);
     }
+}
+
+$(window).resize(function(){
+    $('.wizard-card').each(function(){
+        $wizard = $(this);
+        index = $wizard.bootstrapWizard('currentIndex');
+        refreshAnimation($wizard, index);
+
+        $('.moving-tab').css({
+            '-webkit-transition': 'transform 0s'
+        });
+    });
+});
+
+function refreshAnimation($wizard, index){
+    total_steps = $wizard.find('li').length;
+    move_distance = $wizard.width() / total_steps;
+    step_width = move_distance;
+    move_distance *= index;
+
+    $current = index + 1;
+
+
+
+    if($current == 1){
+        move_distance -= 8;
+    } else if($current == total_steps){
+        move_distance += 8;
+    }
+
+    $wizard.find('.moving-tab').css('width', step_width);
+    $('.moving-tab').css({
+        '-webkit-transform':'translate3d(' + move_distance + 'px, 0, 0)',
+        '-webkit-transition': 'transform 0.5s cubic-bezier(0.29, 1.42, 0.79, 1)'
+    });
+
 }

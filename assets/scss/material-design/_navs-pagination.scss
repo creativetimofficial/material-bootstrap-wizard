@@ -15,22 +15,22 @@
         font-weight: 500;
         min-width: 100px;
         text-align: center;
-        color: #555555;
+        color: #555555 !important;
     }
 
-    > li.active{
-        a{
-           border-radius: 4px;
-        }
-
-        &:last-child a{
-            margin-right: -8px;
-        }
-
-        &:first-child a{
-            margin-left: -8px;
-        }
-    }
+    // > li.active{
+    //     a{
+    //        border-radius: 4px;
+    //     }
+    //
+    //     &:last-child a{
+    //         margin-right: -8px;
+    //     }
+    //
+    //     &:first-child a{
+    //         margin-left: -8px;
+    //     }
+    // }
 
     > li i{
         display: block;
@@ -166,7 +166,6 @@
     > li.active > a:hover,
     > li.active > a:focus{
         background-color: #2CA8FF;
-        color: #FFFFFF;
     }
 
 }
@@ -222,4 +221,9 @@
 .modal-header {
     border: 0 none;
 
+}
+
+
+.wrapper{
+    position: relative;
 }

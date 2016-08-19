@@ -1,3 +1,16 @@
+.tab-animation{
+    position: absolute;
+    text-align: center;
+    padding: 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+    top:0px;
+    left: 0px;
+    border-radius: 4px;
+    color: $white-color;
+    cursor: pointer;
+}
+
 .card{
     background-color: #FFFFFF;
     padding: 10px 0;
@@ -40,8 +53,6 @@
 }
 .wizard-card{
     min-height: 410px;
-    transition: all 0.2s;
-    -webkit-transition: all 0.2s;
 
     .picture-container{
         position: relative;
@@ -74,8 +85,14 @@
         }
 
         .nav-pills > li.active a{
+            background-color: transparent;
+
+        }
+
+        .moving-tab{
+            @extend .tab-animation;
             background-color: $brand-primary;
-             @include shadow-big-color($brand-primary);
+            @include shadow-big-color($brand-primary);
         }
 
         .choice{
@@ -103,8 +120,13 @@
         }
 
         .nav-pills > li.active a{
+            background-color: transparent;
+        }
+
+        .moving-tab{
+            @extend .tab-animation;
             background-color: $brand-success;
-             @include shadow-big-color($brand-success);
+            @include shadow-big-color($brand-success);
         }
 
         .choice{
@@ -131,6 +153,12 @@
         }
 
         .nav-pills > li.active a{
+            background-color: transparent;
+
+        }
+
+        .moving-tab{
+            @extend .tab-animation;
             background-color: $brand-info;
             @include shadow-big-color($brand-info);
         }
@@ -155,12 +183,18 @@
         .picture{
             &:hover{
                 border-color: $brand-warning;
-                 @include shadow-big-color($brand-warning);
+
             }
         }
 
         .nav-pills > li.active a{
+            background-color: transparent;
+        }
+
+        .moving-tab{
+            @extend .tab-animation;
             background-color: $brand-warning;
+            @include shadow-big-color($brand-warning);
         }
 
         .choice{
@@ -187,8 +221,13 @@
         }
 
         .nav-pills > li.active a{
+            background-color: transparent;
+        }
+
+        .moving-tab{
+            @extend .tab-animation;
             background-color: $brand-danger;
-             @include shadow-big-color($brand-danger);
+            @include shadow-big-color($brand-danger);
         }
 
         .choice{
@@ -215,8 +254,14 @@
         }
 
         .nav-pills > li.active a{
+            background-color: transparent;
+
+        }
+
+        .moving-tab{
+            @extend .tab-animation;
             background-color: $brand-rose;
-             @include shadow-big-color($brand-rose);
+            @include shadow-big-color($brand-rose);
         }
 
         .choice{
