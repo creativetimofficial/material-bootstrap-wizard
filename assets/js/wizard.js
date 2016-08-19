@@ -39,7 +39,6 @@ $(document).ready(function(){
             	if(!$valid) {
             		$validator.focusInvalid();
             		return false;
-
             	}
             },
 
@@ -90,7 +89,7 @@ $(document).ready(function(){
 
                 setTimeout(function(){
                     $('.moving-tab').text(button_text);
-                }, 200);
+                }, 150);
 
                 refreshAnimation($wizard, index);
             }
