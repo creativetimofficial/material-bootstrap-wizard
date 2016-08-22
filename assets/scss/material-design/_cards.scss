@@ -110,6 +110,12 @@
             }
         }
 
+        .checkbox input[type=checkbox]:checked + .checkbox-material{
+            .check{
+                background-color: $brand-primary;
+            }
+        }
+
     }
 
     &[data-color="green"]{
@@ -141,6 +147,12 @@
         .form-group{
             .form-control{
                 background-image: linear-gradient($brand-success, $brand-success), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
+            }
+        }
+
+        .checkbox input[type=checkbox]:checked + .checkbox-material{
+            .check{
+                background-color: $brand-success;
             }
         }
     }
@@ -177,6 +189,12 @@
                 background-image: linear-gradient($brand-info, $brand-info), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
             }
         }
+
+        .checkbox input[type=checkbox]:checked + .checkbox-material{
+            .check{
+                background-color: $brand-info;
+            }
+        }
     }
 
     &[data-color="orange"]{
@@ -209,6 +227,12 @@
         .form-group{
             .form-control{
                 background-image: linear-gradient($brand-warning, $brand-warning), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
+            }
+        }
+
+        .checkbox input[type=checkbox]:checked + .checkbox-material{
+            .check{
+                background-color: $brand-warning;
             }
         }
     }
@@ -244,6 +268,12 @@
                 background-image: linear-gradient($brand-danger, $brand-danger), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
             }
         }
+
+        .checkbox input[type=checkbox]:checked + .checkbox-material{
+            .check{
+                background-color: $brand-danger;
+            }
+        }
     }
 
     &[data-color="rose"]{
@@ -276,6 +306,12 @@
         .form-group{
             .form-control{
                 background-image: linear-gradient($brand-rose, $brand-rose), linear-gradient($mdb-input-underline-color, $mdb-input-underline-color);
+            }
+        }
+
+        .checkbox input[type=checkbox]:checked + .checkbox-material{
+            .check{
+                background-color: $brand-rose;
             }
         }
     }

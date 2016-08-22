@@ -109,3 +109,22 @@ $mdb-input-height-small:             (floor($mdb-input-font-size-small * $mdb-in
 
 
 $mdb-input-height-large:             (ceil($mdb-input-font-size-large * $mdb-input-line-height-large) + ($mdb-input-padding-large-vertical * 2) + 2) !default;
+
+
+$mdb-label-color: unquote("rgba(#{$rgb-black}, 0.26)") !default;
+$mdb-label-color-toggle-focus: unquote("rgba(#{$rgb-black}, .54)") !default;
+$mdb-checkbox-label-color: $mdb-label-color !default;
+
+// Radio:
+$mdb-radio-label-color: $mdb-label-color !default;
+$mdb-radio-color-off: $mdb-label-color-toggle-focus !default;
+$mdb-radio-color-on: $brand-primary !default;
+
+// Checkboxes
+$mdb-checkbox-size: 20px !default;
+$mdb-checkbox-animation-ripple: 500ms !default;
+$mdb-checkbox-animation-check: 0.3s !default;
+$mdb-checkbox-checked-color: $brand-primary !default;
+
+$mdb-checkbox-label-color: $mdb-label-color !default;
+$mdb-checkbox-border-color: $mdb-label-color-toggle-focus !default;

@@ -231,6 +231,9 @@ h2.title {
 .wizard-card[data-color="purple"] .form-group .form-control {
   background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2);
 }
+.wizard-card[data-color="purple"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
+  background-color: #9c27b0;
+}
 .wizard-card[data-color="green"] .picture:hover {
   border-color: #4caf50;
 }
@@ -246,6 +249,9 @@ h2.title {
 }
 .wizard-card[data-color="green"] .form-group .form-control {
   background-image: linear-gradient(#4caf50, #4caf50), linear-gradient(#D2D2D2, #D2D2D2);
+}
+.wizard-card[data-color="green"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
+  background-color: #4caf50;
 }
 .wizard-card[data-color="blue"] .picture:hover {
   border-color: #00bcd4;
@@ -263,6 +269,9 @@ h2.title {
 .wizard-card[data-color="blue"] .form-group .form-control {
   background-image: linear-gradient(#00bcd4, #00bcd4), linear-gradient(#D2D2D2, #D2D2D2);
 }
+.wizard-card[data-color="blue"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
+  background-color: #00bcd4;
+}
 .wizard-card[data-color="orange"] .picture:hover {
   border-color: #ff9800;
 }
@@ -278,6 +287,9 @@ h2.title {
 }
 .wizard-card[data-color="orange"] .form-group .form-control {
   background-image: linear-gradient(#ff9800, #ff9800), linear-gradient(#D2D2D2, #D2D2D2);
+}
+.wizard-card[data-color="orange"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
+  background-color: #ff9800;
 }
 .wizard-card[data-color="red"] .picture:hover {
   border-color: #f44336;
@@ -295,6 +307,9 @@ h2.title {
 .wizard-card[data-color="red"] .form-group .form-control {
   background-image: linear-gradient(#f44336, #f44336), linear-gradient(#D2D2D2, #D2D2D2);
 }
+.wizard-card[data-color="red"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
+  background-color: #f44336;
+}
 .wizard-card[data-color="rose"] .picture:hover {
   border-color: #e91e63;
 }
@@ -310,6 +325,9 @@ h2.title {
 }
 .wizard-card[data-color="rose"] .form-group .form-control {
   background-image: linear-gradient(#e91e63, #e91e63), linear-gradient(#D2D2D2, #D2D2D2);
+}
+.wizard-card[data-color="rose"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
+  background-color: #e91e63;
 }
 .wizard-card .picture input[type="file"] {
   cursor: pointer;
@@ -1584,6 +1602,250 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
   color: #FF3B30;
 }
 
+.radio label {
+  cursor: pointer;
+  padding-left: 35px;
+  position: relative;
+  color: rgba(0,0,0, 0.26);
+}
+.form-group.is-focused .radio label {
+  color: rgba(0,0,0, 0.26);
+}
+.form-group.is-focused .radio label:hover, .form-group.is-focused .radio label:focus {
+  color: rgba(0,0,0, .54);
+}
+fieldset[disabled] .form-group.is-focused .radio label {
+  color: rgba(0,0,0, 0.26);
+}
+.radio label span {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 2px;
+  transition-duration: 0.2s;
+}
+.radio label .circle {
+  border: 1px solid rgba(0,0,0, .54);
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+.radio label .check {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  background-color: #9c27b0;
+  transform: scale3d(0, 0, 0);
+}
+.radio label .check:after {
+  display: block;
+  position: absolute;
+  content: "";
+  background-color: rgba(0,0,0, 0.87);
+  left: -18px;
+  top: -18px;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  z-index: 1;
+  opacity: 0;
+  margin: 0;
+  transform: scale3d(1.5, 1.5, 1);
+}
+.radio label input[type=radio]:not(:checked) ~ .check:after {
+  animation: rippleOff 500ms;
+}
+.radio label input[type=radio]:checked ~ .check:after {
+  animation: rippleOn 500ms;
+}
+.radio input[type=radio] {
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+.radio input[type=radio]:checked ~ .check, .radio input[type=radio]:checked ~ .circle {
+  opacity: 1;
+}
+.radio input[type=radio]:checked ~ .check {
+  background-color: #9c27b0;
+}
+.radio input[type=radio]:checked ~ .circle {
+  border-color: #9c27b0;
+}
+.radio input[type=radio]:checked ~ .check {
+  transform: scale3d(0.65, 0.65, 1);
+}
+.radio input[type=radio][disabled] ~ .check, .radio input[type=radio][disabled] ~ .circle {
+  opacity: 0.26;
+}
+.radio input[type=radio][disabled] ~ .check {
+  background-color: #000000;
+}
+.radio input[type=radio][disabled] ~ .circle {
+  border-color: #000000;
+}
+
+@keyframes rippleOn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes rippleOff {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.checkbox label {
+  cursor: pointer;
+  padding-left: 0;
+  color: rgba(0,0,0, 0.26);
+}
+.form-group.is-focused .checkbox label {
+  color: rgba(0,0,0, 0.26);
+}
+.form-group.is-focused .checkbox label:hover, .form-group.is-focused .checkbox label:focus {
+  color: rgba(0,0,0, .54);
+}
+fieldset[disabled] .form-group.is-focused .checkbox label {
+  color: rgba(0,0,0, 0.26);
+}
+.checkbox input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+  margin: 0;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  left: 0;
+  pointer-events: none;
+}
+.checkbox .checkbox-material {
+  vertical-align: middle;
+  position: relative;
+  top: 3px;
+  padding-right: 5px;
+}
+.checkbox .checkbox-material:before {
+  display: block;
+  position: absolute;
+  left: 0;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.84);
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  z-index: 1;
+  opacity: 0;
+  margin: 0;
+  transform: scale3d(2.3, 2.3, 1);
+}
+.checkbox .checkbox-material .check {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(0,0,0, .54);
+  overflow: hidden;
+  z-index: 1;
+  border-radius: 3px;
+}
+.checkbox .checkbox-material .check:before {
+  position: absolute;
+  content: "";
+  transform: rotate(45deg);
+  display: block;
+  margin-top: -3px;
+  margin-left: 7px;
+  width: 0;
+  height: 0;
+  background: red;
+  box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0 inset;
+  animation: checkbox-off 0.3s forwards;
+}
+.checkbox input[type=checkbox]:focus + .checkbox-material .check:after {
+  opacity: 0.2;
+}
+.checkbox input[type=checkbox]:checked + .checkbox-material .check {
+  background: #9c27b0;
+}
+.checkbox input[type=checkbox]:checked + .checkbox-material .check:before {
+  color: #FFFFFF;
+  box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px;
+  animation: checkbox-on 0.3s forwards;
+}
+.checkbox input[type=checkbox]:checked + .checkbox-material:before {
+  animation: rippleOn 500ms;
+}
+.checkbox input[type=checkbox]:checked + .checkbox-material .check:after {
+  animation: rippleOn 500ms forwards;
+}
+.checkbox input[type=checkbox]:not(:checked) + .checkbox-material:before {
+  animation: rippleOff 500ms;
+}
+.checkbox input[type=checkbox]:not(:checked) + .checkbox-material .check:after {
+  animation: rippleOff 500ms;
+}
+fieldset[disabled] .checkbox, fieldset[disabled] .checkbox input[type=checkbox],
+.checkbox input[type=checkbox][disabled] ~ .checkbox-material .check,
+.checkbox input[type=checkbox][disabled] + .circle {
+  opacity: 0.5;
+}
+.checkbox input[type=checkbox][disabled] ~ .checkbox-material .check {
+  border-color: #000000;
+  opacity: .26;
+}
+.checkbox input[type=checkbox][disabled] + .checkbox-material .check:after {
+  background-color: rgba(0,0,0, 0.87);
+  transform: rotate(-45deg);
+}
+
+@keyframes checkbox-on {
+  0% {
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 15px 2px 0 11px;
+  }
+  50% {
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px 2px 0 11px;
+  }
+  100% {
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px;
+  }
+}
+@keyframes rippleOn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes rippleOff {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @media (max-width: 768px) {
   .main .container {
     margin-bottom: 50px;
