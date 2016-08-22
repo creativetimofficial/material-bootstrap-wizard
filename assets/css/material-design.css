@@ -349,6 +349,9 @@ h2.title {
 .wizard-card .wizard-footer {
   padding: 0 20px;
 }
+.wizard-card .wizard-footer .checkbox {
+  margin-top: 17px;
+}
 .wizard-card .disabled {
   display: none;
 }
