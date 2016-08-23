@@ -138,7 +138,7 @@
                 <div class="fixed-section" data-spy="affix" data-offset-top="340">
                     <ul>
                         <li><a href="#buttons-row">Buttons</a></li>
-                        <li><a href="#checkbox-row">Checkbox/Radio/Toggle</a></li>
+                        <li><a href="#checkbox-row">Checkbox/Radio</a></li>
                         <li><a href="#inputs-row">Inputs</a></li>
                         <li><a href="#textarea-row">Textarea</a></li>
                         <li><a href="#tooltip-row">Tooltips</a></li>
@@ -241,7 +241,7 @@
                 <h2> Checkboxes </h2>
                 <legend></legend>
                 <p>
-                    To use the custom checkboxes, you don't need to import any separate Javascript file, everything is inside material.min.js
+                    To use the custom checkboxes, you don't need to import any separate Javascript file, everything is inside material.min.js. The check color will change when <strong>data-color = 'purple'</strong> attribute is replaced with another color.
                 </p>
                 <p>
 					<div class="checkbox">
@@ -305,7 +305,7 @@
             	<h2> Radio Buttons </h2>
             	<legend></legend>
                 <p>
-                    To use the custom radio buttons, you don't need to import any separate Javascript file, everything is inside material.min.js.
+                    To use the custom radio buttons, you don't need to import any separate Javascript file, everything is inside material.min.js.The check color will change when <strong>data-color = 'purple'</strong> attribute is replaced with another color.
                 </p>
                 <p>
 					<div class="radio">
@@ -501,19 +501,59 @@
 		            <h2>Tooltips</h2>
 		            <legend></legend>
 		            <p style="margin-bottom: 45px;">We restyled the Bootstrap tooltip.</p>
-		            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Button with Tooltip</button>
+
+						<div class="col-sm-4">
+							<div class="card wizard-card" data-color="purple">
+								<div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you or a certified captain will be included.">
+									<input type="radio" name="job" value="Code">
+									<div class="icon">
+										<i class="material-icons">accessibility</i>
+									</div>
+									<h6>Includes Captain</h6>
+								</div>
+							</div>
+						</div>
+
 
 		    	<pre class="prettyprint">
 &lt;!-- Markup --&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Tooltip on top&quot;&gt;Button with Tooltip&lt;/button&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-sm-4&quot;&gt;
+		&lt;div class=&quot;card wizard-card&quot; data-color=&quot;purple&quot;&gt;
+			&lt;div class=&quot;choice&quot; data-toggle=&quot;wizard-radio&quot; rel=&quot;tooltip&quot; title=&quot;Select this option if you or a certified captain will be included.&quot;&gt;
+				&lt;input type=&quot;radio&quot; name=&quot;job&quot; value=&quot;Code&quot;&gt;
+				&lt;div class=&quot;icon&quot;&gt;
+					&lt;i class=&quot;material-icons&quot;&gt;accessibility&lt;/i&gt;
+				&lt;/div&gt;
+				&lt;h6&gt;Includes Captain&lt;/h6&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+
 
 &lt;!-- Javascript --&gt;
 $(&apos;[data-toggle="tooltip"]&apos;).tooltip();
 				</pre>
 
 				</div>
-            </div>
 
+				<!-- popover row -->
+				    <div class="tim-row" id="icons-row">
+				        <h2>Material Icons</h2>
+				        <legend></legend>
+				        <p>
+				            We used the default <a href="https://design.google.com/icons/" target="_blank">Icons for the Material Design</a> which provided by Google.
+				        </p>
+				        <i class="material-icons">face</i>
+				    <pre class="prettyprint">
+
+	&lt;i class=&quot;material-icons&quot;&gt;face&lt;/i&gt;
+	    			</pre>
+				    </div>
+				    <!-- end row -->
+            </div>
         </div>
         </div>
     </div>

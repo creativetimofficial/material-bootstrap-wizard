@@ -21,6 +21,10 @@
     width: 60px
 }
 
+.section .wizard-card{
+    min-height: inherit;
+}
+
 .tim-row{
     margin-bottom: 20px;
 }
