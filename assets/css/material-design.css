@@ -161,7 +161,7 @@ h2.title {
   color: #00bcd4;
 }
 
-.tab-animation, .wizard-card[data-color="purple"] .moving-tab, .wizard-card[data-color="green"] .moving-tab, .wizard-card[data-color="blue"] .moving-tab, .wizard-card[data-color="orange"] .moving-tab, .wizard-card[data-color="red"] .moving-tab, .wizard-card[data-color="rose"] .moving-tab {
+.tab-animation, .wizard-card[data-color="purple"] .moving-tab, .wizard-card[data-color="green"] .moving-tab, .wizard-card[data-color="blue"] .moving-tab, .wizard-card[data-color="orange"] .moving-tab, .wizard-card[data-color="red"] .moving-tab {
   position: absolute;
   text-align: center;
   padding: 12px;
@@ -342,31 +342,6 @@ h2.title {
 }
 .wizard-card[data-color="red"] .radio input[type=radio]:checked ~ .circle {
   border-color: #f44336;
-}
-.wizard-card[data-color="rose"] .picture:hover {
-  border-color: #e91e63;
-}
-.wizard-card[data-color="rose"] .nav-pills > li.active a {
-  background-color: transparent;
-}
-.wizard-card[data-color="rose"] .moving-tab {
-  background-color: #e91e63;
-  box-shadow: 0 16px 26px -10px rgba(233, 30, 99, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(233, 30, 99, 0.2);
-}
-.wizard-card[data-color="rose"] .choice:hover .icon, .wizard-card[data-color="rose"] .choice.active .icon {
-  border-color: #e91e63;
-}
-.wizard-card[data-color="rose"] .form-group .form-control {
-  background-image: linear-gradient(#e91e63, #e91e63), linear-gradient(#D2D2D2, #D2D2D2);
-}
-.wizard-card[data-color="rose"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
-  background-color: #e91e63;
-}
-.wizard-card[data-color="rose"] .radio input[type=radio]:checked ~ .check {
-  background-color: #e91e63;
-}
-.wizard-card[data-color="rose"] .radio input[type=radio]:checked ~ .circle {
-  border-color: #e91e63;
 }
 .wizard-card .picture input[type="file"] {
   cursor: pointer;
@@ -1526,72 +1501,6 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 .navbar .navbar-nav > li > a.btn.btn-danger.btn-simple:active {
   background-color: transparent;
   color: #f44336;
-}
-.btn.btn-upgrade,
-.navbar .navbar-nav > li > a.btn.btn-upgrade {
-  box-shadow: 0 2px 2px 0 rgba(233, 30, 99, 0.14), 0 3px 1px -2px rgba(233, 30, 99, 0.2), 0 1px 5px 0 rgba(233, 30, 99, 0.12);
-}
-.btn.btn-upgrade, .btn.btn-upgrade:hover, .btn.btn-upgrade:focus, .btn.btn-upgrade:active, .btn.btn-upgrade.active, .btn.btn-upgrade:active:focus, .btn.btn-upgrade:active:hover, .btn.btn-upgrade.active:focus, .btn.btn-upgrade.active:hover, .open > .btn.btn-upgrade.dropdown-toggle, .open > .btn.btn-upgrade.dropdown-toggle:focus, .open > .btn.btn-upgrade.dropdown-toggle:hover,
-.navbar .navbar-nav > li > a.btn.btn-upgrade,
-.navbar .navbar-nav > li > a.btn.btn-upgrade:hover,
-.navbar .navbar-nav > li > a.btn.btn-upgrade:focus,
-.navbar .navbar-nav > li > a.btn.btn-upgrade:active,
-.navbar .navbar-nav > li > a.btn.btn-upgrade.active,
-.navbar .navbar-nav > li > a.btn.btn-upgrade:active:focus,
-.navbar .navbar-nav > li > a.btn.btn-upgrade:active:hover,
-.navbar .navbar-nav > li > a.btn.btn-upgrade.active:focus,
-.navbar .navbar-nav > li > a.btn.btn-upgrade.active:hover, .open >
-.navbar .navbar-nav > li > a.btn.btn-upgrade.dropdown-toggle, .open >
-.navbar .navbar-nav > li > a.btn.btn-upgrade.dropdown-toggle:focus, .open >
-.navbar .navbar-nav > li > a.btn.btn-upgrade.dropdown-toggle:hover {
-  background-color: #e91e63;
-  color: #FFFFFF;
-}
-.btn.btn-upgrade:focus, .btn.btn-upgrade:active, .btn.btn-upgrade:hover,
-.navbar .navbar-nav > li > a.btn.btn-upgrade:focus,
-.navbar .navbar-nav > li > a.btn.btn-upgrade:active,
-.navbar .navbar-nav > li > a.btn.btn-upgrade:hover {
-  box-shadow: 0 14px 26px -12px rgba(233, 30, 99, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(233, 30, 99, 0.2);
-}
-.btn.btn-upgrade.disabled, .btn.btn-upgrade.disabled:hover, .btn.btn-upgrade.disabled:focus, .btn.btn-upgrade.disabled.focus, .btn.btn-upgrade.disabled:active, .btn.btn-upgrade.disabled.active, .btn.btn-upgrade:disabled, .btn.btn-upgrade:disabled:hover, .btn.btn-upgrade:disabled:focus, .btn.btn-upgrade:disabled.focus, .btn.btn-upgrade:disabled:active, .btn.btn-upgrade:disabled.active, .btn.btn-upgrade[disabled], .btn.btn-upgrade[disabled]:hover, .btn.btn-upgrade[disabled]:focus, .btn.btn-upgrade[disabled].focus, .btn.btn-upgrade[disabled]:active, .btn.btn-upgrade[disabled].active, fieldset[disabled] .btn.btn-upgrade, fieldset[disabled] .btn.btn-upgrade:hover, fieldset[disabled] .btn.btn-upgrade:focus, fieldset[disabled] .btn.btn-upgrade.focus, fieldset[disabled] .btn.btn-upgrade:active, fieldset[disabled] .btn.btn-upgrade.active,
-.navbar .navbar-nav > li > a.btn.btn-upgrade.disabled,
-.navbar .navbar-nav > li > a.btn.btn-upgrade.disabled:hover,
-.navbar .navbar-nav > li > a.btn.btn-upgrade.disabled:focus,
-.navbar .navbar-nav > li > a.btn.btn-upgrade.disabled.focus,
-.navbar .navbar-nav > li > a.btn.btn-upgrade.disabled:active,
-.navbar .navbar-nav > li > a.btn.btn-upgrade.disabled.active,
-.navbar .navbar-nav > li > a.btn.btn-upgrade:disabled,
-.navbar .navbar-nav > li > a.btn.btn-upgrade:disabled:hover,
-.navbar .navbar-nav > li > a.btn.btn-upgrade:disabled:focus,
-.navbar .navbar-nav > li > a.btn.btn-upgrade:disabled.focus,
-.navbar .navbar-nav > li > a.btn.btn-upgrade:disabled:active,
-.navbar .navbar-nav > li > a.btn.btn-upgrade:disabled.active,
-.navbar .navbar-nav > li > a.btn.btn-upgrade[disabled],
-.navbar .navbar-nav > li > a.btn.btn-upgrade[disabled]:hover,
-.navbar .navbar-nav > li > a.btn.btn-upgrade[disabled]:focus,
-.navbar .navbar-nav > li > a.btn.btn-upgrade[disabled].focus,
-.navbar .navbar-nav > li > a.btn.btn-upgrade[disabled]:active,
-.navbar .navbar-nav > li > a.btn.btn-upgrade[disabled].active, fieldset[disabled]
-.navbar .navbar-nav > li > a.btn.btn-upgrade, fieldset[disabled]
-.navbar .navbar-nav > li > a.btn.btn-upgrade:hover, fieldset[disabled]
-.navbar .navbar-nav > li > a.btn.btn-upgrade:focus, fieldset[disabled]
-.navbar .navbar-nav > li > a.btn.btn-upgrade.focus, fieldset[disabled]
-.navbar .navbar-nav > li > a.btn.btn-upgrade:active, fieldset[disabled]
-.navbar .navbar-nav > li > a.btn.btn-upgrade.active {
-  box-shadow: none;
-}
-.btn.btn-upgrade.btn-simple,
-.navbar .navbar-nav > li > a.btn.btn-upgrade.btn-simple {
-  background-color: transparent;
-  color: #e91e63;
-  box-shadow: none;
-}
-.btn.btn-upgrade.btn-simple:hover, .btn.btn-upgrade.btn-simple:focus, .btn.btn-upgrade.btn-simple:active,
-.navbar .navbar-nav > li > a.btn.btn-upgrade.btn-simple:hover,
-.navbar .navbar-nav > li > a.btn.btn-upgrade.btn-simple:focus,
-.navbar .navbar-nav > li > a.btn.btn-upgrade.btn-simple:active {
-  background-color: transparent;
-  color: #e91e63;
 }
 .btn.btn-white, .btn.btn-white:focus, .btn.btn-white:hover,
 .navbar .navbar-nav > li > a.btn.btn-white,
