@@ -101,6 +101,14 @@
             }
         }
 
+        .radio input[type=radio]:checked ~ .check {
+            background-color: $brand-primary;
+        }
+
+        .radio input[type=radio]:checked ~ .circle {
+            border-color: $brand-primary;
+        }
+
     }
 
     &[data-color="green"]{
@@ -140,6 +148,15 @@
                 background-color: $brand-success;
             }
         }
+
+        .radio input[type=radio]:checked ~ .check {
+            background-color: $brand-success;
+        }
+
+        .radio input[type=radio]:checked ~ .circle {
+            border-color: $brand-success;
+        }
+
     }
 
     &[data-color="blue"]{
@@ -180,6 +197,15 @@
                 background-color: $brand-info;
             }
         }
+
+        .radio input[type=radio]:checked ~ .check {
+            background-color: $brand-info;
+        }
+
+        .radio input[type=radio]:checked ~ .circle {
+            border-color: $brand-info;
+        }
+
     }
 
     &[data-color="orange"]{
@@ -220,6 +246,15 @@
                 background-color: $brand-warning;
             }
         }
+
+        .radio input[type=radio]:checked ~ .check {
+            background-color: $brand-warning;
+        }
+
+        .radio input[type=radio]:checked ~ .circle {
+            border-color: $brand-warning;
+        }
+
     }
 
     &[data-color="red"]{
@@ -259,6 +294,15 @@
                 background-color: $brand-danger;
             }
         }
+
+        .radio input[type=radio]:checked ~ .check {
+            background-color: $brand-danger;
+        }
+
+        .radio input[type=radio]:checked ~ .circle {
+            border-color: $brand-danger;
+        }
+
     }
 
     &[data-color="rose"]{
@@ -298,6 +342,14 @@
             .check{
                 background-color: $brand-rose;
             }
+        }
+
+        .radio input[type=radio]:checked ~ .check {
+            background-color: $brand-rose;
+        }
+
+        .radio input[type=radio]:checked ~ .circle {
+            border-color: $brand-rose;
         }
     }
 

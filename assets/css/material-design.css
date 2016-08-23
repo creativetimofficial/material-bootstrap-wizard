@@ -237,6 +237,12 @@ h2.title {
 .wizard-card[data-color="purple"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
   background-color: #9c27b0;
 }
+.wizard-card[data-color="purple"] .radio input[type=radio]:checked ~ .check {
+  background-color: #9c27b0;
+}
+.wizard-card[data-color="purple"] .radio input[type=radio]:checked ~ .circle {
+  border-color: #9c27b0;
+}
 .wizard-card[data-color="green"] .picture:hover {
   border-color: #4caf50;
 }
@@ -255,6 +261,12 @@ h2.title {
 }
 .wizard-card[data-color="green"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
   background-color: #4caf50;
+}
+.wizard-card[data-color="green"] .radio input[type=radio]:checked ~ .check {
+  background-color: #4caf50;
+}
+.wizard-card[data-color="green"] .radio input[type=radio]:checked ~ .circle {
+  border-color: #4caf50;
 }
 .wizard-card[data-color="blue"] .picture:hover {
   border-color: #00bcd4;
@@ -275,6 +287,12 @@ h2.title {
 .wizard-card[data-color="blue"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
   background-color: #00bcd4;
 }
+.wizard-card[data-color="blue"] .radio input[type=radio]:checked ~ .check {
+  background-color: #00bcd4;
+}
+.wizard-card[data-color="blue"] .radio input[type=radio]:checked ~ .circle {
+  border-color: #00bcd4;
+}
 .wizard-card[data-color="orange"] .picture:hover {
   border-color: #ff9800;
 }
@@ -293,6 +311,12 @@ h2.title {
 }
 .wizard-card[data-color="orange"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
   background-color: #ff9800;
+}
+.wizard-card[data-color="orange"] .radio input[type=radio]:checked ~ .check {
+  background-color: #ff9800;
+}
+.wizard-card[data-color="orange"] .radio input[type=radio]:checked ~ .circle {
+  border-color: #ff9800;
 }
 .wizard-card[data-color="red"] .picture:hover {
   border-color: #f44336;
@@ -313,6 +337,12 @@ h2.title {
 .wizard-card[data-color="red"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
   background-color: #f44336;
 }
+.wizard-card[data-color="red"] .radio input[type=radio]:checked ~ .check {
+  background-color: #f44336;
+}
+.wizard-card[data-color="red"] .radio input[type=radio]:checked ~ .circle {
+  border-color: #f44336;
+}
 .wizard-card[data-color="rose"] .picture:hover {
   border-color: #e91e63;
 }
@@ -331,6 +361,12 @@ h2.title {
 }
 .wizard-card[data-color="rose"] .checkbox input[type=checkbox]:checked + .checkbox-material .check {
   background-color: #e91e63;
+}
+.wizard-card[data-color="rose"] .radio input[type=radio]:checked ~ .check {
+  background-color: #e91e63;
+}
+.wizard-card[data-color="rose"] .radio input[type=radio]:checked ~ .circle {
+  border-color: #e91e63;
 }
 .wizard-card .picture input[type="file"] {
   cursor: pointer;
