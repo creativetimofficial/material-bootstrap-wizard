@@ -1,4 +1,5 @@
-.btn{
+.btn,
+.navbar .navbar-nav > li > a.btn{
     border: none;
     border-radius: $border-radius-base;
     position: relative;
@@ -38,7 +39,7 @@
     &.btn-danger{
       @include btn-styles($brand-danger);
     }
-    &.btn-rose{
+    &.btn-upgrade{
       @include btn-styles($brand-rose);
     }
     &.btn-white{
@@ -54,7 +55,6 @@
             box-shadow: none;
         }
     }
-
 
     &:focus,
     &:active,
@@ -138,8 +138,8 @@
     }
 
     &.btn-just-icon{
-        font-size: 20px;
-        padding: 12px 12px;
+        font-size: 18px;
+        padding: 10px 10px;
         line-height: 1em;
 
         i{
@@ -161,4 +161,85 @@
         position: relative;
     }
 
+}
+
+.navbar .navbar-nav > li > {
+    a.btn{
+        margin-top: 2px;
+        margin-bottom: 2px;
+
+        &.btn-fab{
+            margin: 5px 2px;
+        }
+    }
+    a:not(.btn){
+        .material-icons{
+            margin-top: -3px;
+            top: 0px;
+            position: relative;
+            margin-right: 3px;
+        }
+    }
+    .profile-photo{
+        margin: 5px 2px;
+    }
+}
+
+.navbar-default:not(.navbar-transparent) .navbar-nav > li > {
+    a.btn{
+        &.btn-white.btn-simple{
+            color: $gray;
+        }
+    }
+}
+
+// btn-group variations
+.btn-group,
+.btn-group-vertical {
+
+  position: relative;
+  //border-radius: 2px;
+  margin: 10px 1px;
+
+  &.open {
+    .dropdown-toggle {
+      //box-shadow: none;
+    }
+
+    & > .dropdown-toggle.btn {
+      @include variations(unquote(".btn"), unquote(""), background-color, $mdb-btn-background-color);
+    }
+  }
+
+  .dropdown-menu {
+    border-radius: 0 0 $border-radius-base $border-radius-base;
+  }
+
+  &.btn-group-raised {
+    @include shadow-2dp();
+  }
+
+  & .btn + .btn,
+  .btn,
+  .btn:active,
+  .btn-group {
+    margin: 0;
+  }
+}
+
+.close{
+    font-size: inherit;
+    color: $white-color;
+    opacity: .9;
+    text-shadow: none;
+
+    &:hover,
+    &:focus{
+        opacity: 1;
+        color: $white-color;
+    }
+
+    i{
+        font-size: 20px;
+    }
 }

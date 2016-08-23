@@ -20,21 +20,6 @@
     background: $mdb-card-body-background;
 }
 
-.pick-class-label{
-    border-radius: 8px;
-    color: #ffffff;
-    cursor: pointer;
-    display: inline;
-    font-size: 75%;
-    font-weight: bold;
-    line-height: 1;
-    margin-right: 10px;
-    padding: 15px 23px;
-    text-align: center;
-    vertical-align: baseline;
-    white-space: nowrap;
-}
-
 
 /*      Here the code for the wizard           */
 
@@ -341,7 +326,7 @@
         padding: 0 20px;
 
         .checkbox{
-            margin-top: 17px;
+            margin-top: 16px;
         }
     }
 

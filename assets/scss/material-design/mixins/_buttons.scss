@@ -55,6 +55,28 @@
 
 }
 
+// for social buttons
+@mixin social-buttons-color ($color){
+    background-color: $color;
+    color: #fff;
+    @include shadow-2dp-color($color);
+
+    &:focus,
+    &:active,
+    &:hover{
+        background-color: $color;
+        color: #fff;
+        @include button-shadow-color($color);
+    }
+
+    &.btn-simple{
+        color: $color;
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+
+
 @mixin variations-content($args) {
   //@debug "#{map-get($args, mixin-name)}{ #{map-get($args, material-param-1)}: #{map-get($args, variation-color)}; }";
   //@debug "#{inspect($args)}";

@@ -22,7 +22,6 @@ h5, .h5 {
 h6, .h6{
     font-size: $font-size-h6;
     text-transform: uppercase;
-    font-weight: $font-weight-bold;
 }
 
 .title,
@@ -33,8 +32,6 @@ h6, .h6{
 .footer-big h4,
 .media .media-heading{
     font-weight: $font-weight-extra-bold;
-    font-family: $font-family-serif;
-
     &,
     a{
         color: $black-color;
@@ -50,4 +47,20 @@ h2.title{
 .card-description,
 .footer-big p{
     color: $gray-light;
+}
+
+.text-warning {
+  color: $brand-warning;
+}
+.text-primary {
+  color: $brand-primary;
+}
+.text-danger {
+  color: $brand-danger;
+}
+.text-success {
+  color: $brand-success;
+}
+.text-info {
+  color: $brand-info;
 }

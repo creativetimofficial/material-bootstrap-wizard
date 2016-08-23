@@ -19,6 +19,27 @@ $font-weight-extra-bold: 700 !default;
 $white-color: #FFFFFF !default;
 $gray-color:  #999999 !default;
 
+$font-weight-light: 300 !default;
+$font-weight-default: 400 !default;
+$font-weight-bold:    500 !default;
+$font-weight-extra-bold: 700 !default;
+$font-weight-ultra-bold: 900 !default;
+
+$grid-float-breakpoint:     $screen-sm-min !default;
+
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+
+$screen-lg:                  1200px !default;
+
+$fast-transition-time:      150ms !default;
+$transition-ease:           ease 0s;
+
+
+$screen-lg-min:              $screen-lg !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+
 
 $brand-primary: $purple !default;
 $brand-info: $cyan !default;
@@ -69,6 +90,20 @@ $mdb-shadow-key-penumbra-opacity: 0.14 !default;
 $mdb-shadow-key-umbra-opacity: 0.2 !default;
 $mdb-shadow-ambient-shadow-opacity: 0.12 !default;
 
+
+//variables for social
+$social-facebook: 			#3b5998;
+$social-twitter: 			#55acee;
+$social-pinterest: 			#cc2127;
+$social-google: 			#dd4b39;
+$social-linkedin: 			#0976b4;
+$social-dribbble: 			#ea4c89;
+$social-github: 			#333333;
+$social-youtube: 			#e52d27;
+$social-instagram: 		    #125688;
+$social-reddit: 			#ff4500;
+$social-tumblr: 			#35465c;
+$social-behance: 			#1769ff;
 
 
 $mdb-animation-curve-fast-out-linear-in: cubic-bezier(0.4, 0, 1, 1) !default;

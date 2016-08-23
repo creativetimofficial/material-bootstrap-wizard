@@ -91,6 +91,21 @@ $(document).ready(function(){
                     $('.moving-tab').text(button_text);
                 }, 150);
 
+                var checkbox = $('.footer-checkbox');
+
+                if( !index == 0 ){
+                    $(checkbox).css({
+                        'opacity':'0',
+                        'visibility':'hidden',
+                        'position':'absolute'
+                    });
+                } else {
+                    $(checkbox).css({
+                        'opacity':'1',
+                        'visibility':'visible'
+                    });
+                }
+
                 refreshAnimation($wizard, index);
             }
 	  	});
@@ -138,9 +153,6 @@ function readURL(input) {
     }
 }
 
-
-
-
 $(window).resize(function(){
     $('.wizard-card').each(function(){
         $wizard = $(this);
@@ -176,3 +188,34 @@ function refreshAnimation($wizard, index){
     });
 
 }
+
+materialDesign = {
+
+    checkScrollForTransparentNavbar: debounce(function() {
+                if($(document).scrollTop() > 260 ) {
+                    if(transparent) {
+                        transparent = false;
+                        $('.navbar-color-on-scroll').removeClass('navbar-transparent');
+                    }
+                } else {
+                    if( !transparent ) {
+                        transparent = true;
+                        $('.navbar-color-on-scroll').addClass('navbar-transparent');
+                    }
+                }
+        }, 17)
+
+}
+
+function debounce(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		clearTimeout(timeout);
+		timeout = setTimeout(function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		}, wait);
+		if (immediate && !timeout) func.apply(context, args);
+	};
+};

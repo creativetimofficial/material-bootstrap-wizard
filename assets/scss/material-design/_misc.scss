@@ -58,18 +58,6 @@ a{
   }
 }
 
-// /*           Animations              */
-// .animation-transition-general{
-//     @include transition($general-transition-time, $transition-linear);
-// }
-//
-// .animation-transition-slow{
-//     @include transition($slow-transition-time, $transition-linear);
-// }
-//
-// .animation-transition-fast{
-//     @include transition($fast-transition-time, $transition-ease);
-// }
 legend {
   border-bottom: 0;
 }
