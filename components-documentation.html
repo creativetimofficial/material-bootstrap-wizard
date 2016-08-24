@@ -103,14 +103,14 @@
     <div class="collapse navbar-collapse" id="navigation-doc">
 		<ul  class="nav navbar-nav navbar-right">
 			<li>
-				<a href="index.html">Back to Kit</a>
+				<a href="index.html">Back to Material Bootstrap Wizard</a>
 			</li>
 			<li>
                 <a href="https://github.com/timcreative/material-kit/issues">Have an issue?</a>
             </li>
 			<li>
 				<a href="http://demos.creative-tim.com/material-kit-pro/presentation.html?ref=utp-freebie" target="_blank">
-					<i class="material-icons">unarchive</i> Upgrade to PRO
+					<i class="material-icons">unarchive</i> Get Material Kit PRO
 				</a>
 			</li>
     	</ul>
@@ -202,15 +202,6 @@
 				<p>
 					<button class="btn btn-primary">Default</button>
 					<button class="btn btn-primary btn-round">Round</button>
-					<button class="btn btn-primary btn-round">
-						<i class="material-icons">favorite</i> With Icon
-					</button>
-					<button class="btn btn-primary btn-fab btn-fab-mini btn-round">
-						<i class="material-icons">favorite</i>
-					</button>
-					<button class="btn btn-primary btn-just-icon">
-						<i class="material-icons">favorite</i>
-					</button>
 					<button class="btn btn-primary btn-simple">Simple</button>
 
                 </p>
@@ -218,15 +209,6 @@
     			<pre class="prettyprint">
 &lt;button class=&quot;btn btn-primary&quot;&gt;Default&lt;/button&gt;
 &lt;button class=&quot;btn btn-primary btn-round&quot;&gt;Round&lt;/button&gt;
-&lt;button class=&quot;btn btn-primary btn-round&quot;&gt;
-	&lt;i class=&quot;material-icons&quot;&gt;favorite&lt;/i&gt; With Icon
-&lt;/button&gt;
-&lt;button class=&quot;btn btn-primary btn-fab btn-fab-mini btn-round&quot;&gt;
-	&lt;i class=&quot;material-icons&quot;&gt;favorite&lt;/i&gt;
-&lt;/button&gt;
-&lt;button class=&quot;btn btn-primary btn-just-icon&quot;&gt;
-	&lt;i class=&quot;material-icons&quot;&gt;favorite&lt;/i&gt;
-&lt;/button&gt;
 &lt;button class=&quot;btn btn-primary btn-simple&quot;&gt;Simple&lt;/button&gt;
     			</pre>
 
@@ -502,8 +484,19 @@
 		            <legend></legend>
 		            <p style="margin-bottom: 45px;">We restyled the Bootstrap tooltip.</p>
 
-						<div class="col-sm-4">
-							<div class="card wizard-card" data-color="purple">
+					<div class="row">
+						<div class="card wizard-card" data-color="purple">
+							<div class="col-sm-4 col-sm-offset-2">
+								<div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Renters you approve will be able to take this boat">
+									<input type="radio" name="job" value="Design">
+									<div class="icon">
+										<i class="material-icons">rounded_corner</i>
+									</div>
+									<h6>No Captain</h6>
+								</div>
+							</div>
+
+							<div class="col-sm-4">
 								<div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you or a certified captain will be included.">
 									<input type="radio" name="job" value="Code">
 									<div class="icon">
@@ -513,13 +506,22 @@
 								</div>
 							</div>
 						</div>
-
+					</div>
 
 		    	<pre class="prettyprint">
-&lt;!-- Markup --&gt;
 &lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col-sm-4&quot;&gt;
-		&lt;div class=&quot;card wizard-card&quot; data-color=&quot;purple&quot;&gt;
+	&lt;div class=&quot;card wizard-card&quot; data-color=&quot;purple&quot;&gt;
+		&lt;div class=&quot;col-sm-4 col-sm-offset-2&quot;&gt;
+			&lt;div class=&quot;choice&quot; data-toggle=&quot;wizard-radio&quot; rel=&quot;tooltip&quot; title=&quot;Renters you approve will be able to take this boat&quot;&gt;
+				&lt;input type=&quot;radio&quot; name=&quot;job&quot; value=&quot;Design&quot;&gt;
+				&lt;div class=&quot;icon&quot;&gt;
+					&lt;i class=&quot;material-icons&quot;&gt;rounded_corner&lt;/i&gt;
+				&lt;/div&gt;
+				&lt;h6&gt;No Captain&lt;/h6&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;col-sm-4&quot;&gt;
 			&lt;div class=&quot;choice&quot; data-toggle=&quot;wizard-radio&quot; rel=&quot;tooltip&quot; title=&quot;Select this option if you or a certified captain will be included.&quot;&gt;
 				&lt;input type=&quot;radio&quot; name=&quot;job&quot; value=&quot;Code&quot;&gt;
 				&lt;div class=&quot;icon&quot;&gt;
@@ -530,7 +532,6 @@
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
-
 
 
 &lt;!-- Javascript --&gt;
