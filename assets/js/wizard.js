@@ -58,7 +58,7 @@ $(document).ready(function(){
               refreshAnimation($wizard, index);
 
               $('.moving-tab').css({
-                  '-webkit-transition':'transform 0s'
+                  'transition':'transform 0s'
               });
 
                navigation.find('li').css('width',$width + '%');
@@ -160,7 +160,7 @@ $(window).resize(function(){
         refreshAnimation($wizard, index);
 
         $('.moving-tab').css({
-            '-webkit-transition': 'transform 0s'
+            'transition': 'transform 0s'
         });
     });
 });
@@ -183,8 +183,8 @@ function refreshAnimation($wizard, index){
 
     $wizard.find('.moving-tab').css('width', step_width);
     $('.moving-tab').css({
-        '-webkit-transform':'translate3d(' + move_distance + 'px, 0, 0)',
-        '-webkit-transition': 'transform 0.5s cubic-bezier(0.29, 1.42, 0.79, 1)'
+        'transform':'translate3d(' + move_distance + 'px, 0, 0)',
+        'transition': 'all 0.5s cubic-bezier(0.29, 1.42, 0.79, 1)'
     });
 
 }
