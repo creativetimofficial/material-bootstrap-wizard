@@ -38,19 +38,7 @@
     &.btn-danger{
       @include btn-styles($brand-danger);
     }
-    &.btn-white{
-        &,
-        &:focus,
-        &:hover{
-            background-color: $white-color;
-            color: $gray-light;
-        }
-        &.btn-simple{
-            color: #FFFFFF;
-            background: transparent;
-            box-shadow: none;
-        }
-    }
+    
 
     &:focus,
     &:active,

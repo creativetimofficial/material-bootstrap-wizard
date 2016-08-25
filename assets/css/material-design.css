@@ -1192,15 +1192,6 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
   background-color: transparent;
   color: #f44336;
 }
-.btn.btn-white, .btn.btn-white:focus, .btn.btn-white:hover {
-  background-color: #FFFFFF;
-  color: #999999;
-}
-.btn.btn-white.btn-simple {
-  color: #FFFFFF;
-  background: transparent;
-  box-shadow: none;
-}
 .btn:focus, .btn:active, .btn:active:focus {
   outline: 0;
 }
