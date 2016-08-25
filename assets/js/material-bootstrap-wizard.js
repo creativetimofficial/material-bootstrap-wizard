@@ -93,13 +93,6 @@ $(document).ready(function(){
               }
 
 
-
-              refreshAnimation($wizard, index);
-
-              $('.moving-tab').css({
-                  'transition':'transform 0s'
-              });
-
                navigation.find('li').css('width',$width + '%');
 
                $first_li = navigation.find('li:first-child').html();
@@ -107,6 +100,12 @@ $(document).ready(function(){
                $moving_div = $('<div class="moving-tab">' + $first_li + '</div>');
 
                $('.wizard-card .wrapper').append($moving_div);
+
+                refreshAnimation($wizard, index);
+
+              $('.moving-tab').css('transition','transform 0s');
+
+
            },
 
             onTabClick : function(tab, navigation, index){
@@ -229,8 +228,8 @@ function refreshAnimation($wizard, index){
     $('.moving-tab').css({
         'transform':'translate3d(' + move_distance + 'px, 0, 0)',
         'transition': 'all 0.5s cubic-bezier(0.29, 1.42, 0.79, 1)'
-    });
 
+    });
 }
 
 materialDesign = {
