@@ -95,7 +95,7 @@ $(document).ready(function(){
 
                navigation.find('li').css('width',$width + '%');
 
-               $first_li = navigation.find('li:first-child').html();
+               $first_li = navigation.find('li:first-child a').html();
 
                $moving_div = $('<div class="moving-tab">' + $first_li + '</div>');
 
