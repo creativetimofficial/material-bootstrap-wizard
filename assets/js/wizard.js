@@ -55,6 +55,8 @@ $(document).ready(function(){
                   $width = 50;
               }
 
+
+
               refreshAnimation($wizard, index);
 
               $('.moving-tab').css({
@@ -63,6 +65,11 @@ $(document).ready(function(){
 
                navigation.find('li').css('width',$width + '%');
 
+               $first_li = navigation.find('li:first-child').html();
+
+               $moving_div = $('<div class="moving-tab">' + $first_li + '</div>');
+
+               $('.wizard-card .wrapper').append($moving_div);
            },
 
             onTabClick : function(tab, navigation, index){
