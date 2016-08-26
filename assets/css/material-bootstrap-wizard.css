@@ -129,6 +129,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   height: 50px;
   display: block;
   position: fixed;
+  z-index: 555;
   bottom: 50px;
   right: 50px;
   border-radius: 30px;
@@ -173,7 +174,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 .material-promo p strong {
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 h1, .h1 {
