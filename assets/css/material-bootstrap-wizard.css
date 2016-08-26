@@ -146,9 +146,10 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   transition: 0.55s cubic-bezier(0.6, 0, 0.4, 1);
 }
 .material-promo:hover, .material-promo:active, .material-promo:focus {
-  width: 215px;
+  width: 218px;
   color: #FFFFFF;
   transition-duration: .55s;
+  padding: 10px 19px;
 }
 .material-promo:hover p, .material-promo:active p, .material-promo:focus p {
   opacity: 1;
@@ -163,7 +164,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .material-promo p {
   color: rgba(255, 255, 255, 0.6);
   position: relative;
-  left: 50px;
+  left: 39px;
   top: -17px;
   opacity: 0;
   margin: 0;
