@@ -99,7 +99,7 @@ $(document).ready(function(){
 
                $moving_div = $('<div class="moving-tab">' + $first_li + '</div>');
 
-               $('.wizard-card .wrapper').append($moving_div);
+               $('.wizard-card .wizard-navigation').append($moving_div);
 
                 refreshAnimation($wizard, index);
 

@@ -25,14 +25,6 @@
 
 /*      Here the code for the wizard           */
 
-
-.image-container{
-    height: 100vh;
-    background-position: center center;
-    background-size: cover;
-}
-
-
 .wizard-container{
     padding-top: 100px;
     z-index: 3;
@@ -88,6 +80,7 @@
             &.active{
                 .icon{
                     border-color: $brand-primary;
+                    color: $brand-primary;
                 }
             }
         }
@@ -136,6 +129,7 @@
             &.active{
                 .icon{
                     border-color: $brand-success;
+                    color: $brand-success;
                 }
             }
         }
@@ -185,6 +179,7 @@
             &.active{
                 .icon{
                     border-color: $brand-info;
+                    color: $brand-info;
                 }
             }
         }
@@ -234,6 +229,7 @@
             &.active{
                 .icon{
                     border-color: $brand-warning;
+                    color: $brand-warning;
                 }
             }
         }
@@ -282,6 +278,7 @@
             &.active{
                 .icon{
                     border-color: $brand-danger;
+                    color: $brand-danger;
                 }
             }
         }
@@ -325,11 +322,11 @@
 
     .tab-content{
         min-height: 340px;
-        padding: 20px 10px;
+        padding: 20px 15px;
     }
 
     .wizard-footer{
-        padding: 0 20px;
+        padding: 0 15px;
 
         .checkbox{
             margin-top: 16px;
@@ -382,7 +379,7 @@
         }
 
         i{
-            font-size: 30px;
+            font-size: 40px;
             line-height: 111px;
         }
 
