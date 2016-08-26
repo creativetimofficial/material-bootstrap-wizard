@@ -17,14 +17,13 @@
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/css/material-design.css" rel="stylesheet" />
 
-
 	<!-- CSS Just for demo purpose, don't include it in your project -->
 	<link href="assets/css/demo.css" rel="stylesheet" />
 
 </head>
 
 <body>
-<div class="image-container set-full-height" style="background-image: url('assets/img/wizard-boat.jpg')">
+<div class="image-container set-full-height" style="background-image: url('https://hd.unsplash.com/photo-1444201983204-c43cbd584d93')">
     <!--   Creative Tim Branding   -->
     <a href="http://creative-tim.com">
          <div class="logo-container">
@@ -44,15 +43,15 @@
 
             <!--      Wizard container        -->
             <div class="wizard-container">
-                <div class="card wizard-card" data-color="blue" id="wizard">
+                <div class="card wizard-card" data-color="purple" id="wizard">
                     <form action="" method="">
                 <!--        You can switch " data-color="blue" "  with one of the next bright colors: "green", "orange", "red", "rose", "purple"             -->
 
                     	<div class="wizard-header">
-                        	<h3 class="title">
-                        		List Your Boat
+                        	<h3 class="wizard-title">
+                        		Boook a Room
                         	</h3>
-							<h5>This information will let us know more about your boat.</h5>
+							<h5>This information will let us know more about your room.</h5>
                     	</div>
 
 						<div class="wizard-navigation">
@@ -72,22 +71,29 @@
                                     <h4 class="info-text"> Let's start with the basic details</h4>
                                   </div>
 
-                                  <div class="col-sm-5 col-sm-offset-1">
-                                      <div class="form-group label-floating">
-                                        <label class="control-label">Boat Type</label>
-                                        <select class="form-control">
-                                            <option disabled="" selected=""></option>
-                                            <option>Power</option>
-                                            <option>Sail</option>
-                                            <option>Paddle</option>
-                                        </select>
-                                      </div>
+                                  	<div class="col-sm-5 col-sm-offset-1">
+										<div class="input-group">
+  											<span class="input-group-addon">
+  												<i class="material-icons">email</i>
+  											</span>
+  											<input type="text" class="form-control" placeholder="Email...">
+  										</div>
 
-									  <div class="form-group label-floating">
+										<div class="form-group label-floating">
+											<label class="control-label">Boat Type</label>
+											<select class="form-control">
+										    	<option disabled="" selected=""></option>
+										    	<option>Power</option>
+										    	<option>Sail</option>
+										    	<option>Paddle</option>
+											</select>
+										</div>
+
+										<div class="form-group label-floating">
 										<label class="control-label">What city is your boat in?</label>
 										<input type="text" class="form-control" id="exampleInputEmail1">
-									  </div>
-                                  </div>
+										</div>
+                                  	</div>
                                   <div class="col-sm-5">
                                       <div class="form-group label-floating">
                                           <label class="control-label">Year Manufacture</label>
@@ -111,9 +117,7 @@
                                           </div>
                                       </div>
                                   </div>
-                                  <!-- <div class="col-sm-5">
 
-                                  </div> -->
                               </div>
                             </div>
                             <div class="tab-pane" id="captain">
@@ -148,9 +152,7 @@
                                     <div class="col-sm-6 col-sm-offset-1">
                                          <div class="form-group">
                                             <label>Boat description</label>
-                                            <textarea class="form-control" placeholder="" rows="9">
-
-                                            </textarea>
+                                            <textarea class="form-control" placeholder="" rows="6"></textarea>
                                           </div>
                                     </div>
                                     <div class="col-sm-4">
@@ -164,8 +166,8 @@
                         </div>
                         <div class="wizard-footer">
                             	<div class="pull-right">
-                                    <input type='button' class='btn btn-next btn-fill btn-info btn-wd' name='next' value='Next' />
-                                    <input type='button' class='btn btn-finish btn-fill btn-info btn-wd' name='finish' value='Finish' />
+                                    <input type='button' class='btn btn-next btn-fill btn-primary btn-wd' name='next' value='Next' />
+                                    <input type='button' class='btn btn-finish btn-fill btn-primary btn-wd' name='finish' value='Finish' />
                                 </div>
                                 <div class="pull-left">
                                     <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Previous' />
