@@ -1,11 +1,10 @@
 /*! =========================================================
  *
- * Light Bootstrap Dashboard PRO - V1.3.0
- *
- * =========================================================
- *
- * Copyright 2016 Creative Tim
- * Available with purchase of license from http://www.creative-tim.com/product/light-bootstrap-dashboard-pro
+ Material Bootstrap Wizard - V1.0.0
+*
+* =========================================================
+*
+* Copyright 2016 Creative Tim (http://creative-tim.com)
  *
  *                       _oo0oo_
  *                      o8888888o
@@ -112,8 +111,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   display: block;
   position: fixed;
   z-index: 555;
-  bottom: 50px;
-  right: 50px;
+  bottom: 40px;
+  right: 40px;
   border-radius: 30px;
   background-color: rgba(16, 16, 16, 0.35);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -131,26 +130,30 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     color: #FFFFFF;
     transition-duration: .55s;
     padding: 10px 19px; }
-    .made-with-mk:hover p, .made-with-mk:active p, .made-with-mk:focus p {
+    .made-with-mk:hover .made-with, .made-with-mk:active .made-with, .made-with-mk:focus .made-with {
       opacity: 1; }
-  .made-with-mk span {
+  .made-with-mk .brand,
+  .made-with-mk .made-with {
+    float: left; }
+  .made-with-mk .brand {
     position: relative;
-    top: 3px;
+    top: 4px;
     letter-spacing: 1px;
     vertical-align: middle;
-    font-size: 16px; }
-  .made-with-mk p {
+    font-size: 16px;
+    font-weight: 600; }
+  .made-with-mk .made-with {
     color: rgba(255, 255, 255, 0.6);
-    position: relative;
-    left: 39px;
-    top: -17px;
+    position: absolute;
+    left: 58px;
+    top: 14px;
     opacity: 0;
     margin: 0;
     -webkit-transition: 0.55s cubic-bezier(0.6, 0, 0.4, 1);
     -moz-transition: 0.55s cubic-bezier(0.6, 0, 0.4, 1);
     -o-transition: 0.55s cubic-bezier(0.6, 0, 0.4, 1);
     transition: 0.55s cubic-bezier(0.6, 0, 0.4, 1); }
-    .made-with-mk p strong {
+    .made-with-mk .made-with strong {
       font-weight: 400;
       color: rgba(255, 255, 255, 0.9); }
 

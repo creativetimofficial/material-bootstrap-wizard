@@ -107,8 +107,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     display: block;
     position: fixed;
     z-index: 555;
-    bottom: 50px;
-    right: 50px;
+    bottom: 40px;
+    right: 40px;
     border-radius: 30px;
     background-color: rgba(16, 16, 16, 0.35);
     border: 1px solid rgba(255,255,255,.15);
@@ -131,24 +131,29 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
         transition-duration: .55s;
         padding: 10px 19px;
 
-        p{
+        .made-with{
             opacity: 1;
         }
     }
 
-    span{
+    .brand,
+    .made-with{
+        float: left;
+    }
+    .brand{
         position: relative;
-        top: 3px;
+        top: 4px;
         letter-spacing: 1px;
         vertical-align: middle;
         font-size: 16px;
+        font-weight: 600;
     }
 
-    p{
+    .made-with{
         color: rgba(255,255,255, .6);
-        position: relative;
-        left: 39px;
-        top: -17px;
+        position: absolute;
+        left: 58px;
+        top: 14px;
         opacity: 0;
         margin: 0;
         -webkit-transition: .55s cubic-bezier(.6,0,.4,1);
