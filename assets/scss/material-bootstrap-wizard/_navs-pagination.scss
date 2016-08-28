@@ -1,0 +1,213 @@
+/*            Navigation menu                */
+.nav-pills{
+    background-color: rgba(200, 200, 200, 0.2);
+
+    > li + li {
+        margin-left: 0;
+    }
+
+    > li > a {
+        border: 0 !important;
+        border-radius: 0 ;
+        line-height: 18px;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 500;
+        min-width: 100px;
+        text-align: center;
+        color: #555555 !important;
+    }
+
+    > li i{
+        display: block;
+        font-size: 30px;
+        padding: 15px 0;
+    }
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: transparent;
+}
+
+.nav-pills,
+.pagination{
+    &[data-color="blue"]{
+        > li.active > a,
+        > li.active > a:hover,
+        > li.active > a:focus,
+        > .active > a,
+        > .active > span,
+        > .active > a:hover,
+        > .active > span:hover,
+        > .active > a:focus,
+        > .active > span:focus{
+            background-color: $brand-info;
+        }
+    }
+
+    &[data-color="purple"]{
+        > li.active > a,
+        > li.active > a:hover,
+        > li.active > a:focus,
+        > .active > a,
+        > .active > span,
+        > .active > a:hover,
+        > .active > span:hover,
+        > .active > a:focus,
+        > .active > span:focus{
+            background-color: $brand-primary;
+        }
+    }
+
+    &[data-color="green"]{
+        > li.active > a,
+        > li.active > a:hover,
+        > li.active > a:focus,
+        > .active > a,
+        > .active > span,
+        > .active > a:hover,
+        > .active > span:hover,
+        > .active > a:focus,
+        > .active > span:focus{
+            background-color: $brand-success;
+        }
+    }
+
+    &[data-color="orange"]{
+        > li.active > a,
+        > li.active > a:hover,
+        > li.active > a:focus,
+        > .active > a,
+        > .active > span,
+        > .active > a:hover,
+        > .active > span:hover,
+        > .active > a:focus,
+        > .active > span:focus{
+            background-color: $brand-warning;
+        }
+    }
+
+    &[data-color="red"]{
+        > li.active > a,
+        > li.active > a:hover,
+        > li.active > a:focus,
+        > .active > a,
+        > .active > span,
+        > .active > a:hover,
+        > .active > span:hover,
+        > .active > a:focus,
+        > .active > span:focus{
+            background-color: $brand-danger;
+        }
+    }
+
+    &[data-color="rose"]{
+        > li.active > a,
+        > li.active > a:hover,
+        > li.active > a:focus,
+        > .active > a,
+        > .active > span,
+        > .active > a:hover,
+        > .active > span:hover,
+        > .active > a:focus,
+        > .active > span:focus{
+            background-color: $brand-rose;
+        }
+    }
+}
+
+
+.nav-pills{
+    &[data-color="blue"] > li > a {
+        border: 1px solid $brand-info;
+        color: $brand-info;
+    }
+
+    &[data-color="purple"] > li > a {
+        border: 1px solid $brand-primary;
+        color: $brand-primary;
+    }
+
+    &[data-color="green"] > li > a {
+        border: 1px solid $brand-success;
+        color: $brand-success;
+    }
+
+    &[data-color="orange"] > li > a {
+        border: 1px solid $brand-warning;
+        color: $brand-warning;
+    }
+
+    &[data-color="red"] > li > a {
+        border: 1px solid $brand-danger;
+        color: $brand-danger;
+    }
+
+    &[data-color="rose"] > li > a {
+        border: 1px solid $brand-rose;
+        color: $brand-rose;
+    }
+
+    > li.active > a,
+    > li.active > a:hover,
+    > li.active > a:focus{
+        background-color: #2CA8FF;
+    }
+
+}
+
+
+.pagination{
+    &.no-border{
+        > li > a,
+        > li > span{
+            border: 0;
+        }
+    }
+
+    > li > a,
+    > li > span,
+    > li:first-child > a,
+    > li:first-child > span,
+    > li:last-child > a,
+    > li:last-child > span{
+        border-radius: 50%;
+        margin: 0 2px;
+        color: #777777;
+    }
+
+    > li.active > a,
+    > li.active > span,
+    > li.active > a:hover,
+    > li.active > span:hover,
+    > li.active > a:focus,
+    > li.active > span:focus{
+        background-color: #2CA8FF;
+        border: 0;
+        color: #FFFFFF;
+        padding: 7px 13px;
+    }
+}
+
+.text-primary, .text-primary:hover{
+    color: $brand-primary;
+}
+.text-info, .text-info:hover{
+    color: $brand-info;
+}
+.text-success, .text-success:hover{
+    color: $brand-success;
+}
+.text-warning, .text-warning:hover{
+    color: $brand-warning;
+}
+.text-danger, .text-danger:hover{
+    color: $brand-danger;
+}
+.modal-header {
+    border: 0 none;
+
+}
+.wizard-navigation{
+    position: relative;
+}

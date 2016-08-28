@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png" />
+	<link rel="icon" type="image/png" href="assets/img/favicon.ico" />
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Components Documentation - Bootstrap Wizard by Creative Tim</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+	<!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/material-bootstrap-wizard.css" rel="stylesheet"/>
+	<link href="assets/css/demo.css" rel="stylesheet" />
+
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+	<style>
+		pre.prettyprint{
+		    background-color: #eee;
+		    border: 0px;
+		    margin-bottom: 60px;
+		    margin-top: 30px;
+		    padding: 20px;
+		    text-align: left;
+		}
+		.atv, .str{
+		    color: #05AE0E;
+		}
+		.tag, .pln, .kwd{
+		    color: #3472F7;
+		}
+		.atn{
+		    color: #2C93FF;
+		}
+		.pln{
+		    color: #333;
+		}
+		.com{
+		    color: #999;
+		}
+		.space-top{
+		    margin-top: 50px;
+		}
+		.btn-primary .caret{
+		    border-top-color: #3472F7;
+		    color: #3472F7;
+		}
+		.area-line{
+		    border: 1px solid #999;
+		    border-left: 0;
+		    border-right: 0;
+		    color: #666;
+		    display: block;
+		    margin-top: 20px;
+		    padding: 8px 0;
+		    text-align: center;
+		}
+		.area-line a{
+		    color: #666;
+		}
+		.container-fluid{
+		    padding-right: 15px;
+		    padding-left: 15px;
+		}
+		.table-shopping .td-name{
+			min-width: 130px;
+		}
+	</style>
+</head>
+
+<body class="components-page">
+
+<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button id="menu-toggle" type="button" class="navbar-toggle" data-target="#navigation-doc">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar bar1"></span>
+        <span class="icon-bar bar2"></span>
+        <span class="icon-bar bar3"></span>
+      </button>
+      <a href="http://www.creative-tim.com">
+           <div class="logo-container logo-documentation">
+                <div class="logo">
+                    <img src="assets/img/new_logo.png" alt="Creative Tim Logo">
+                </div>
+                <div class="brand">
+                    Creative Tim
+                </div>
+            </div>
+      </a>
+
+	  <!--  Made With Material Kit  -->
+	  <a href="http://demos.creative-tim.com/material-kit/index.html" class="made-with-mk">
+		  <div class="brand">MK</div>
+		  <div class="made-with">Made with <strong>Material Kit</strong></div>
+	  </a>
+
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navigation-doc">
+		<ul  class="nav navbar-nav navbar-right">
+			<li>
+				<a href="wizard-book-room.html">Back to Material Bootstrap Wizard</a>
+			</li>
+			<li>
+                <a href="https://github.com/timcreative/material-bootstrap-wizard/issues">Have an issue?</a>
+            </li>
+    	</ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="wrapper">
+	<div class="header header-filter" style="background-image: url('https://images.unsplash.com/photo-1423655156442-ccc11daa4e99?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450');">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<h1 class="title text-center">Components Documentation</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="main main-raised">
+        <div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="fixed-section" data-spy="affix" data-offset-top="340">
+                    <ul>
+                        <li><a href="#buttons-row">Buttons</a></li>
+                        <li><a href="#checkbox-row">Checkbox/Radio</a></li>
+                        <li><a href="#inputs-row">Inputs</a></li>
+                        <li><a href="#textarea-row">Textarea</a></li>
+                        <li><a href="#tooltip-row">Tooltips</a></li>
+						<li><a href="#icons-row">Material Icons</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8 col-md-offset-1">
+                <div class="tim-container">
+
+	    	<!-- buttons row -->
+	        <div class="tim-row" id="buttons-row">
+
+                <h2>Buttons</h2>
+                <legend></legend>
+                <h4>Colors</h4>
+                <p>We worked over the original Bootstrap classes, choosing a different, slightly intenser color pallete:</p>
+                <p>
+                       <button class="btn btn-default">Default</button>
+                       <button class="btn btn-primary">Primary</button>
+                       <button class="btn btn-info">Info</button>
+                       <button class="btn btn-success">Success</button><br/>
+                       <button class="btn btn-warning">Warning</button>
+                       <button class="btn btn-danger">Danger</button>
+                </p>
+
+    			<pre class="prettyprint">
+
+&lt;button class=&quot;btn btn-default&quot;&gt;Default&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
+&lt;button class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
+&lt;button class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
+&lt;button class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+    			</pre>
+
+
+            	<h4>Sizes</h4>
+                <p>Buttons come in all needed sizes:</p>
+                <p>
+                    <button class="btn btn-primary btn-lg">Large</button>
+                    <button class="btn btn-primary">Normal</button>
+                    <button class="btn btn-primary btn-sm">Small</button>
+                    <button class="btn btn-primary btn-xs">Extra Small</button>
+                </p>
+
+				<pre class="prettyprint">
+
+&lt;button class=&quot;btn btn-primary btn-lg&quot;&gt;Large&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary&quot;&gt;Normal&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary btn-sm&quot;&gt;Small&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary btn-xs&quot;&gt;Extra Small&lt;/button&gt;
+    			</pre>
+
+        	</div>
+    		<!--  end row -->
+
+    		<!-- checkbox row -->
+        	<div class="tim-row" id="checkbox-row">
+                <h2> Checkboxes </h2>
+                <legend></legend>
+                <p>
+                    To use the custom checkboxes, you don't need to import any separate Javascript file, everything is inside material.min.js. The check color will change when <strong>data-color = 'purple'</strong> attribute of the Wizard is replaced with another color.
+                </p>
+                <p>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="optionsCheckboxes">
+							Unchecked
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="optionsCheckboxes" checked>
+							Checked
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="optionsCheckboxes" disabled>
+							Disabled Unchecked
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="optionsCheckboxes" disabled checked>
+							Disabled Checked
+						</label>
+					</div>
+                </p>
+
+    			<pre class="prettyprint">
+&lt;div class=&quot;checkbox&quot;&gt;
+	&lt;label&gt;
+		&lt;input type=&quot;checkbox&quot; name=&quot;optionsCheckboxes&quot;&gt;
+		Unchecked
+	&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;checkbox&quot;&gt;
+	&lt;label&gt;
+		&lt;input type=&quot;checkbox&quot; name=&quot;optionsCheckboxes&quot; checked&gt;
+		Checked
+	&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;checkbox&quot;&gt;
+	&lt;label&gt;
+		&lt;input type=&quot;checkbox&quot; name=&quot;optionsCheckboxes&quot; disabled&gt;
+		Disabled Unchecked
+	&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;checkbox&quot;&gt;
+	&lt;label&gt;
+		&lt;input type=&quot;checkbox&quot; name=&quot;optionsCheckboxes&quot; disabled checked&gt;
+		Disabled Checked
+	&lt;/label&gt;
+&lt;/div&gt;
+
+				</pre>
+        	</div>
+    		<!-- end row -->
+
+    		<!-- radio row -->
+        	<div class="tim-row" id="radio-row">
+            	<h2> Radio Buttons </h2>
+            	<legend></legend>
+                <p>
+                    To use the custom radio buttons, you don't need to import any separate Javascript file, everything is inside material.min.js.The check color will change when <strong>data-color = 'purple'</strong> attribute is replaced with another color.
+                </p>
+                <p>
+					<div class="radio">
+						<label>
+							<input type="radio" name="optionsRadios">
+							Radio is off
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="optionsRadios" checked="true">
+							Radio is on
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="optionsRadiosDisabled" disabled>
+							Disabled Radio is off
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="optionsRadiosDisabled" checked="true" disabled>
+							Disabled Radio is on
+						</label>
+					</div>
+                </p>
+
+				<pre class="prettyprint">
+&lt;div class=&quot;radio&quot;&gt;
+	&lt;label&gt;
+		&lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot;&gt;
+		Radio is off
+	&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;radio&quot;&gt;
+	&lt;label&gt;
+		&lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; checked=&quot;true&quot;&gt;
+		Radio is on
+	&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;radio&quot;&gt;
+	&lt;label&gt;
+		&lt;input type=&quot;radio&quot; name=&quot;optionsRadiosDisabled&quot; disabled&gt;
+		Disabled Radio is off
+	&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;radio&quot;&gt;
+	&lt;label&gt;
+		&lt;input type=&quot;radio&quot; name=&quot;optionsRadiosDisabled&quot; checked=&quot;true&quot; disabled&gt;
+		Disabled Radio is on
+	&lt;/label&gt;
+&lt;/div&gt;
+    			</pre>
+		    </div>
+		    <!-- end row -->
+
+
+    		<!-- inputs row -->
+        	<div class="tim-row" id="inputs-row">
+                <h2>Inputs </h2>
+                <legend></legend>
+
+                <p>
+                We restyled the Bootstrap input to give it a more flat, minimal look. You can use them with regular labels, floating labels and states or input groups.
+                </p>
+                <div class="row">
+					<div class="col-sm-4">
+	                	<div class="form-group">
+	        	        	<input type="text" value="" placeholder="Regular" class="form-control" />
+	                	</div>
+	                </div>
+
+					<div class="col-sm-4">
+						<div class="form-group label-floating">
+							<label class="control-label">With Floating Label</label>
+							<input type="text" class="form-control">
+						</div>
+					</div>
+
+	                <div class="col-sm-4">
+	                	<div class="form-group label-floating has-success">
+							<label class="control-label">Success input</label>
+	                    	<input type="text" value="Success" class="form-control" />
+							<span class="form-control-feedback">
+								<i class="material-icons">done</i>
+							</span>
+	                	</div>
+	                </div>
+
+	                <div class="col-sm-4">
+	                	<div class="form-group label-floating has-error">
+							<label class="control-label">Error input</label>
+	                    	<input type="text" value="Error Input" class="form-control" />
+	                    	<span class="material-icons form-control-feedback">clear</span>
+	                	</div>
+	                </div>
+
+					<div class="col-sm-4">
+						<div class="input-group">
+							<span class="input-group-addon">
+								<i class="material-icons">group</i>
+							</span>
+							<input type="text" class="form-control" placeholder="With Material Icons">
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="input-group">
+							<span class="input-group-addon">
+								<i class="fa fa-group"></i>
+							</span>
+							<input type="text" class="form-control" placeholder="With Font Awesome Icons">
+						</div>
+					</div>
+	        	</div>
+
+
+    			<pre class="prettyprint">
+
+&lt;div class=&quot;col-sm-4&quot;&gt;
+	&lt;div class=&quot;form-group&quot;&gt;
+    	&lt;input type=&quot;text&quot; value=&quot;&quot; placeholder=&quot;Regular&quot; class=&quot;form-control&quot; /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col-sm-4&quot;&gt;
+	&lt;div class=&quot;form-group label-floating&quot;&gt;
+		&lt;label class=&quot;control-label&quot;&gt;With Floating Label&lt;/label&gt;
+		&lt;input type=&quot;email&quot; class=&quot;form-control&quot;&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col-sm-4&quot;&gt;
+	&lt;div class=&quot;form-group label-floating has-success&quot;&gt;
+		&lt;label class=&quot;control-label&quot;&gt;Success input&lt;/label&gt;
+		&lt;input type=&quot;text&quot; value=&quot;Success&quot; class=&quot;form-control&quot; /&gt;
+		&lt;span class=&quot;form-control-feedback&quot;&gt;
+			&lt;i class=&quot;material-icons&quot;&gt;done&lt;/i&gt;
+		&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col-sm-4&quot;&gt;
+	&lt;div class=&quot;form-group label-floating has-error&quot;&gt;
+		&lt;label class=&quot;control-label&quot;&gt;Error input&lt;/label&gt;
+		&lt;input type=&quot;email&quot; value=&quot;Error Input&quot; class=&quot;form-control&quot; /&gt;
+		&lt;span class=&quot;material-icons form-control-feedback&quot;&gt;clear&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col-sm-4&quot;&gt;
+	&lt;div class=&quot;input-group&quot;&gt;
+		&lt;span class=&quot;input-group-addon&quot;&gt;
+			&lt;i class=&quot;material-icons&quot;&gt;group&lt;/i&gt;
+		&lt;/span&gt;
+		&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;With Material Icons&quot;&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col-sm-4&quot;&gt;
+	&lt;div class=&quot;input-group&quot;&gt;
+		&lt;span class=&quot;input-group-addon&quot;&gt;
+			&lt;i class=&quot;fa fa-group&quot;&gt;&lt;/i&gt;
+		&lt;/span&gt;
+		&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;With Font Awesome Icons&quot;&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+				</pre>
+    		</div>
+    		<!-- end row -->
+
+
+			<!-- textarea row -->
+			<div class="tim-row" id="textarea-row">
+			    <h2>Textarea</h2>
+			    <legend></legend>
+			    <p>The textarea has a new style, so it looks similar to all other inputs.</p>
+
+			    <textarea class="form-control" placeholder="Here can be your nice text" rows="5"></textarea>
+
+				<pre class="prettyprint">
+&lt;textarea class=&quot;form-control&quot; placeholder=&quot;Here can be your nice text&quot; rows=&quot;5&quot;&gt;&lt;/textarea&gt;
+				</pre>
+		    </div>
+		    <!-- end row -->
+
+		    </div>
+		    <!-- end row -->
+
+		    	<!-- tooltip row -->
+		    	<div class="tim-row" id="tooltip-row">
+		            <h2>Tooltips</h2>
+		            <legend></legend>
+		            <p style="margin-bottom: 45px;">We restyled the Bootstrap tooltip.</p>
+
+
+						<div class="card wizard-card" data-color="purple">
+							<div class="row">
+								<div class="col-sm-4 col-sm-offset-2">
+									<div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Renters you approve will be able to take this boat">
+										<input type="radio" name="job" value="Design">
+										<div class="icon">
+											<i class="material-icons">rounded_corner</i>
+										</div>
+										<h6>No Captain</h6>
+									</div>
+								</div>
+
+								<div class="col-sm-4">
+									<div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you or a certified captain will be included.">
+										<input type="radio" name="job" value="Code">
+										<div class="icon">
+											<i class="material-icons">accessibility</i>
+										</div>
+										<h6>Includes Captain</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+		    	<pre class="prettyprint">
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;card wizard-card&quot; data-color=&quot;purple&quot;&gt;
+		&lt;div class=&quot;col-sm-4 col-sm-offset-2&quot;&gt;
+			&lt;div class=&quot;choice&quot; data-toggle=&quot;wizard-radio&quot; rel=&quot;tooltip&quot; title=&quot;Renters you approve will be able to take this boat&quot;&gt;
+				&lt;input type=&quot;radio&quot; name=&quot;job&quot; value=&quot;Design&quot;&gt;
+				&lt;div class=&quot;icon&quot;&gt;
+					&lt;i class=&quot;material-icons&quot;&gt;rounded_corner&lt;/i&gt;
+				&lt;/div&gt;
+				&lt;h6&gt;No Captain&lt;/h6&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;col-sm-4&quot;&gt;
+			&lt;div class=&quot;choice&quot; data-toggle=&quot;wizard-radio&quot; rel=&quot;tooltip&quot; title=&quot;Select this option if you or a certified captain will be included.&quot;&gt;
+				&lt;input type=&quot;radio&quot; name=&quot;job&quot; value=&quot;Code&quot;&gt;
+				&lt;div class=&quot;icon&quot;&gt;
+					&lt;i class=&quot;material-icons&quot;&gt;accessibility&lt;/i&gt;
+				&lt;/div&gt;
+				&lt;h6&gt;Includes Captain&lt;/h6&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;!-- Javascript --&gt;
+$(&apos;[data-toggle="tooltip"]&apos;).tooltip();
+				</pre>
+
+				</div>
+
+				<!-- popover row -->
+				    <div class="tim-row" id="icons-row">
+				        <h2>Material Icons</h2>
+				        <legend></legend>
+				        <p>
+				            We used the default <a href="https://design.google.com/icons/" target="_blank">Icons for the Material Design</a> which provided by Google.
+				        </p>
+				        <i class="material-icons">face</i>
+				    <pre class="prettyprint">
+
+	&lt;i class=&quot;material-icons&quot;&gt;face&lt;/i&gt;
+	    			</pre>
+				    </div>
+				    <!-- end row -->
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer footer-transparent footer-documentation">
+        <div class="container">
+            <nav class="pull-left">
+                <ul>
+					<li>
+						<a href="http://www.creative-tim.com">
+							Creative Tim
+						</a>
+					</li>
+					<li>
+						<a href="http://presentation.creative-tim.com">
+						   About Us
+						</a>
+					</li>
+					<li>
+						<a href="http://blog.creative-tim.com">
+						   Blog
+						</a>
+					</li>
+					<li>
+						<a href="http://www.creative-tim.com/license">
+							Licenses
+						</a>
+					</li>
+                </ul>
+            </nav>
+            <div class="social-area pull-right">
+                <a class="btn btn-social btn-twitter btn-simple btn-just-icon" href="https://twitter.com/CreativeTim">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="btn btn-social btn-facebook btn-simple btn-just-icon" href="https://www.facebook.com/CreativeTim">
+                    <i class="fa fa-facebook-square"></i>
+                </a>
+                <a class="btn btn-social btn-google btn-simple btn-just-icon" href="https://plus.google.com/+CreativetimPage">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            </div>
+            <div class="copyright">
+                &copy; 2016 Creative Tim, made with love
+            </div>
+        </div>
+    </footer>
+
+</div>
+</body>
+
+	<!--   Core JS Files   -->
+	<script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/jquery.bootstrap.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Wizard -->
+	<script src="assets/js/material-bootstrap-wizard.js"></script>
+
+	<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+	<script src="assets/js/jquery.validate.min.js"></script>
+
+    <script>
+        var header_height;
+        var fixed_section;
+        var floating = false;
+
+        $().ready(function(){
+            suggestions_distance = $("#suggestions").offset();
+            pay_height = $('.fixed-section').outerHeight();
+
+			$(window).on('scroll', materialDesign.checkScrollForTransparentNavbar);
+        });
+    </script>
+
+</html>

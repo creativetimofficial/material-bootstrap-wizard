@@ -1,0 +1,15 @@
+@mixin transform-translate-y($value){
+     -webkit-transform:  translate3d(0,$value, 0);
+        -moz-transform: translate3d(0, $value, 0);
+        -o-transform: translate3d(0, $value, 0);
+        -ms-transform: translate3d(0, $value, 0);
+        transform: translate3d(0, $value, 0);
+}
+
+@mixin transition($time, $type){
+    -webkit-transition: all $time $type;
+    -moz-transition: all $time $type;
+    -o-transition: all $time $type;
+    -ms-transition: all $time $type;
+    transition: all $time $type;
+}
