@@ -1427,12 +1427,11 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
   text-align: center;
   color: #555555 !important;
 }
-.nav-pills > li > a:hover, .nav-pills > li > a:focus {
-  background-color: inherit;
-}
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
-.nav-pills > li.active > a:focus {
+.nav-pills > li.active > a:focus,
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus {
   background-color: inherit;
 }
 .nav-pills > li i {

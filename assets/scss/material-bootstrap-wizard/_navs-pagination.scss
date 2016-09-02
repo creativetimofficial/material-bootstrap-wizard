@@ -16,16 +16,13 @@
         min-width: 100px;
         text-align: center;
         color: #555555 !important;
-
-        &:hover,
-        &:focus{
-            background-color: inherit;
-        }
     }
 
     > li.active > a,
     > li.active > a:hover,
-    > li.active > a:focus{
+    > li.active > a:focus,
+    > li > a:hover,
+    > li > a:focus{
         background-color: inherit;
     }
 
