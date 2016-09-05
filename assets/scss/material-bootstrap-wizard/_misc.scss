@@ -134,6 +134,10 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
         .made-with{
             opacity: 1;
         }
+
+        .brand{
+            left: 0;
+        }
     }
 
     .brand,
@@ -143,6 +147,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     .brand{
         position: relative;
         top: 4px;
+        left: -1px;
         letter-spacing: 1px;
         vertical-align: middle;
         font-size: 16px;

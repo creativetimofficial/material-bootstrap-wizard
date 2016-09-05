@@ -153,6 +153,9 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .made-with-mk:hover .made-with, .made-with-mk:active .made-with, .made-with-mk:focus .made-with {
   opacity: 1;
 }
+.made-with-mk:hover .brand, .made-with-mk:active .brand, .made-with-mk:focus .brand {
+  left: 0;
+}
 .made-with-mk .brand,
 .made-with-mk .made-with {
   float: left;
@@ -160,6 +163,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .made-with-mk .brand {
   position: relative;
   top: 4px;
+  left: -1px;
   letter-spacing: 1px;
   vertical-align: middle;
   font-size: 16px;
