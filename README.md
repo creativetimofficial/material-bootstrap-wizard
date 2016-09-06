@@ -65,7 +65,13 @@ material-bootstrap-wizard/
 
 ### Version logs
 
-v1.0 27 Aug '16 [initial release]
+v1.0, 27 Aug '16 [initial release]
+
+- V1.0.1, 06 Sep '16 - Bugfixing
+    - added validation in next check step
+    - favicon changes
+    - edit readme
+    - changes on scss files
 
 
 
