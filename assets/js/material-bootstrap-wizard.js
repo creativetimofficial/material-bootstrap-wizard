@@ -102,8 +102,13 @@ $(document).ready(function(){
        },
 
         onTabClick : function(tab, navigation, index){
-            // Disable the posibility to click on tabs
-            return false;
+            var $valid = $('.wizard-card form').valid();
+
+            if(!$valid){
+                return false;
+            } else{
+                return true;
+            }
         },
 
         onTabShow: function(tab, navigation, index) {

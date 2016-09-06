@@ -1,13 +1,60 @@
-# Material Bootstrap Wizard
+# [Material Bootstrap Wizard](http://demos.creative-tim.com/material-bootstrap-wizard/wizard-book-room.html)
+
+![alt text](http://s3.amazonaws.com/creativetim_bucket/products/48/original/opt_mbw_thumbnail.jpg?1472405077)
 
 Download from: [Creative Tim](http://www.creative-tim.com/product/material-bootstrap-wizard)
-Live Preview: [Live Preview](http://demos.creative-tim.com/material-bootstrap-wizard/wizard-book-room.html)
 
 **Material Bootstrap Wizard** is a fully responsive wizard that is inspired by the famous Google's Material Design and comes with 3 useful examples and 5 colors. The Material Bootstrap Wizard is one of the most handy elements that can be used inside a project. We highly recommend it not just as a design feature, but as a way of guiding your users through tough forms.
 
 First of all, you need to determine when you need a wizard. Do you have a form of over 10 fields? Do you have users not going through with the registration process? Do you have unfinished list? They all have something in common; and they all have the same solution. So, what is wrong with letting your users see an infinite form? They will get discouraged to finish it. What is the solution? Better visual organization, mainly in the form of a wizard.
 
 What Material Bootstrap Wizard does is to break the information into chunks and lets the user see it one step at a time. In this way, the user only has to focus on the current step. He will also see how many steps he has ahead, so he won't be discouraged by something that looks like an long process. Consider win-win for both you and the users: they have a better experience and you will have all the necessary information!
+
+## Links:
+
++ [Live Preview](http://demos.creative-tim.com/material-bootstrap-wizard/wizard-book-room.html)
+
+## Quick start
+
+Quick start options:
+
+- [Download from Github](https://github.com/timcreative/material-bootstrap-wizard/releases/tag/v1.0.0).
+- [Download from Creative Tim](http://www.creative-tim.com/product/material-kit).
+- Clone the repo: `git clone https://github.com/timcreative/material-bootstrap-wizard.git`.
+
+### What's included
+
+Within the download you'll find the following directories and files:
+
+```
+material-bootstrap-wizard/
+├── assets/
+|   ├── css/
+|   |   ├── bootstrap.min.css
+|   |   ├── material-bootstrap-wizard.css
+|   |   └── demo.css
+|   ├── js/   
+|   |   ├── bootstrap.min.js
+|   |   ├── jquery.min.js
+|   |   ├── jquery.bootstrap.js
+|   |   ├── jquery.validate.min.js
+|   |   └── material-bootstrap-wizard.js
+|   ├── sass/
+|   |    ├── material-bootstrap-wizard
+|   |    └── material-bootstrap-wizard.scss
+|   └── img/
+|
+├── documentation
+├── Creative Tim License.pdf
+├── wizard-list-place.html
+├── wizard-build-profile.html
+├── wizard-book-room.html
+
+```
+
+### Version logs
+
+v1.0 27 Aug '16 [initial release]
 
 
 Technical
@@ -26,6 +73,26 @@ If you want to start with a pre-built template, you can see the following exampl
 [Book Hotel Room](http://demos.creative-tim.com/material-bootstrap-wizard/wizard-book-room.html)
 [List Your Place](http://demos.creative-tim.com/material-bootstrap-wizard/wizard-list-place.html)
 
-Change Log
 
-v1.0 27 Aug '16 [initial release]
+
+## Useful Links
+
+More products from Creative Tim: <http://www.creative-tim.com/products>
+
+Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
+
+Freebies: <http://www.creative-tim.com/products>
+
+Affiliate Program (earn money): <http://www.creative-tim.com/affiliates/new>
+
+Social Media:
+
+Twitter: <https://twitter.com/CreativeTim>
+
+Facebook: <https://www.facebook.com/CreativeTim>
+
+Dribbble: <https://dribbble.com/creativetim>
+
+Google+: <https://plus.google.com/+CreativetimPage>
+
+Instagram: <https://instagram.com/creativetimofficial>

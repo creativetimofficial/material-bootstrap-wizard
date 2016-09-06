@@ -134,6 +134,10 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
         .made-with{
             opacity: 1;
         }
+
+        .brand{
+            left: 0;
+        }
     }
 
     .brand,
@@ -143,6 +147,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     .brand{
         position: relative;
         top: 4px;
+        left: -1px;
         letter-spacing: 1px;
         vertical-align: middle;
         font-size: 16px;
@@ -165,5 +170,14 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
             font-weight: 400;
             color: rgba(255,255,255, .9);
         }
+    }
+}
+
+.wizard-container{
+    padding-top: 100px;
+    z-index: 3;
+
+    .wizard-navigation{
+        position: relative;
     }
 }
