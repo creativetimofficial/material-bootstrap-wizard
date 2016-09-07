@@ -2,8 +2,6 @@
 
 ![alt text](http://s3.amazonaws.com/creativetim_bucket/products/48/original/opt_mbw_thumbnail.jpg?1472405077)
 
-Download from: [Creative Tim](http://www.creative-tim.com/product/material-bootstrap-wizard)
-
 **Material Bootstrap Wizard** is a fully responsive wizard that is inspired by the famous Google's Material Design and comes with 3 useful examples and 5 colors. The Material Bootstrap Wizard is one of the most handy elements that can be used inside a project. We highly recommend it not just as a design feature, but as a way of guiding your users through tough forms.
 
 First of all, you need to determine when you need a wizard. Do you have a form of over 10 fields? Do you have users not going through with the registration process? Do you have unfinished list? They all have something in common; and they all have the same solution. So, what is wrong with letting your users see an infinite form? They will get discouraged to finish it. What is the solution? Better visual organization, mainly in the form of a wizard.
@@ -29,8 +27,8 @@ Technical
 
 Quick start options:
 
-- [Download from Github](https://github.com/timcreative/material-bootstrap-wizard/releases/tag/v1.0.0).
-- [Download from Creative Tim](http://www.creative-tim.com/product/material-kit).
+- [Download from Github](https://github.com/timcreative/material-bootstrap-wizard.git).
+- [Download from: Creative Tim](http://www.creative-tim.com/product/material-bootstrap-wizard).
 - Clone the repo: `git clone https://github.com/timcreative/material-bootstrap-wizard.git`.
 
 ### What's included
@@ -79,7 +77,7 @@ v1.0, 27 Aug '16 [initial release]
 
 ## Useful Links
 
-More products from Creative Tim: <http://www.creative-tim.com/products>
+More products from Creative Tim: <http://www.creative-tim.com/bootstrap-themes>
 
 Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
 
