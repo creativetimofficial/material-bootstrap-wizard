@@ -1,10 +1,10 @@
 /*! =========================================================
  *
- * Material Bootstrap Wizard - V1.0.0
+ * Material Bootstrap Wizard - V1.0.1
  *
  * =========================================================
  *
- * Copyright 2016 Creative Tim (http://creative-tim.com)
+ * Copyright 2016 Creative Tim (http://www.creative-tim.com/product/material-bootstrap-wizard)
  *
  *
  *                       _oo0oo_
