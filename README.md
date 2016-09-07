@@ -27,7 +27,7 @@ Technical
 
 Quick start options:
 
-- [Download from Github](https://github.com/timcreative/material-bootstrap-wizard.git).
+- [Download from Github](https://github.com/timcreative/material-bootstrap-wizard/archive/master.zip).
 - [Download from: Creative Tim](http://www.creative-tim.com/product/material-bootstrap-wizard).
 - Clone the repo: `git clone https://github.com/timcreative/material-bootstrap-wizard.git`.
 
