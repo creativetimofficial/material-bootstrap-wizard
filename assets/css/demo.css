@@ -503,6 +503,11 @@ body{
   font-size: 20px;
   max-width: 20px;
 }
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+    color: inherit;
+    background-color: transparent;
+}
 
 .navbar .navbar-nav > li > a:not(.btn) .material-icons {
   margin-top: -3px;
