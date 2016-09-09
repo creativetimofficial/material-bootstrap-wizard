@@ -303,20 +303,22 @@ h2.title {
 .wizard-card .picture:hover {
   border-color: #2ca8ff;
 }
-.wizard-card[data-color="purple"] .moving-tab {
+.wizard-card .moving-tab {
   position: absolute;
   text-align: center;
   padding: 12px;
   font-size: 12px;
   text-transform: uppercase;
   -webkit-font-smoothing: subpixel-antialiased;
-  background-color: #9c27b0;
   top: -4px;
   left: 0px;
   border-radius: 4px;
   color: #FFFFFF;
   cursor: pointer;
   font-weight: 500;
+}
+.wizard-card[data-color="purple"] .moving-tab {
+  background-color: #9c27b0;
   box-shadow: 0 16px 26px -10px rgba(156, 39, 176, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(156, 39, 176, 0.2);
 }
 .wizard-card[data-color="purple"] .picture:hover {
@@ -339,19 +341,7 @@ h2.title {
   border-color: #9c27b0;
 }
 .wizard-card[data-color="green"] .moving-tab {
-  position: absolute;
-  text-align: center;
-  padding: 12px;
-  font-size: 12px;
-  text-transform: uppercase;
-  -webkit-font-smoothing: subpixel-antialiased;
   background-color: #4caf50;
-  top: -4px;
-  left: 0px;
-  border-radius: 4px;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-weight: 500;
   box-shadow: 0 16px 26px -10px rgba(76, 175, 80, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(76, 175, 80, 0.2);
 }
 .wizard-card[data-color="green"] .picture:hover {
@@ -374,19 +364,7 @@ h2.title {
   border-color: #4caf50;
 }
 .wizard-card[data-color="blue"] .moving-tab {
-  position: absolute;
-  text-align: center;
-  padding: 12px;
-  font-size: 12px;
-  text-transform: uppercase;
-  -webkit-font-smoothing: subpixel-antialiased;
   background-color: #00bcd4;
-  top: -4px;
-  left: 0px;
-  border-radius: 4px;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-weight: 500;
   box-shadow: 0 16px 26px -10px rgba(0, 188, 212, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 188, 212, 0.2);
 }
 .wizard-card[data-color="blue"] .picture:hover {
@@ -409,19 +387,7 @@ h2.title {
   border-color: #00bcd4;
 }
 .wizard-card[data-color="orange"] .moving-tab {
-  position: absolute;
-  text-align: center;
-  padding: 12px;
-  font-size: 12px;
-  text-transform: uppercase;
-  -webkit-font-smoothing: subpixel-antialiased;
   background-color: #ff9800;
-  top: -4px;
-  left: 0px;
-  border-radius: 4px;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-weight: 500;
   box-shadow: 0 16px 26px -10px rgba(255, 152, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(255, 152, 0, 0.2);
 }
 .wizard-card[data-color="orange"] .picture:hover {
@@ -444,19 +410,7 @@ h2.title {
   border-color: #ff9800;
 }
 .wizard-card[data-color="red"] .moving-tab {
-  position: absolute;
-  text-align: center;
-  padding: 12px;
-  font-size: 12px;
-  text-transform: uppercase;
-  -webkit-font-smoothing: subpixel-antialiased;
   background-color: #f44336;
-  top: -4px;
-  left: 0px;
-  border-radius: 4px;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-weight: 500;
   box-shadow: 0 16px 26px -10px rgba(244, 67, 54, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2);
 }
 .wizard-card[data-color="red"] .picture:hover {
