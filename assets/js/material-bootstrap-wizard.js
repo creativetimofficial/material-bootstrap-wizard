@@ -34,8 +34,9 @@
 
 // Material Bootstrap Wizard Functions
 
-searchVisible = 0;
-transparent = true;
+var searchVisible = 0;
+var transparent = true;
+var mobile_device = false;
 
 $(document).ready(function(){
 
@@ -81,24 +82,17 @@ $(document).ready(function(){
         },
 
         onInit : function(tab, navigation, index){
+            //check number of tabs and fill the entire row
+            var $total = navigation.find('li').length;
+            var $wizard = navigation.closest('.wizard-card');
 
-          //check number of tabs and fill the entire row
-          var $total = navigation.find('li').length;
-          $width = 100/$total;
-          var $wizard = navigation.closest('.wizard-card');
+            $first_li = navigation.find('li:first-child a').html();
+            $moving_div = $('<div class="moving-tab">' + $first_li + '</div>');
+            $('.wizard-card .wizard-navigation').append($moving_div);
 
-          $display_width = $(document).width();
+            refreshAnimation($wizard, index);
 
-          if($display_width < 600 && $total > 3){
-              $width = 50;
-          }
-
-           navigation.find('li').css('width',$width + '%');
-           $first_li = navigation.find('li:first-child a').html();
-           $moving_div = $('<div class="moving-tab">' + $first_li + '</div>');
-           $('.wizard-card .wizard-navigation').append($moving_div);
-           refreshAnimation($wizard, index);
-           $('.moving-tab').css('transition','transform 0s');
+            $('.moving-tab').css('transition','transform 0s');
        },
 
         onTabClick : function(tab, navigation, index){
@@ -197,6 +191,7 @@ function readURL(input) {
 $(window).resize(function(){
     $('.wizard-card').each(function(){
         $wizard = $(this);
+
         index = $wizard.bootstrapWizard('currentIndex');
         refreshAnimation($wizard, index);
 
@@ -207,22 +202,43 @@ $(window).resize(function(){
 });
 
 function refreshAnimation($wizard, index){
-    total_steps = $wizard.find('li').length;
+    $total = $wizard.find('.nav li').length;
+    $li_width = 100/$total;
+
+    total_steps = $wizard.find('.nav li').length;
     move_distance = $wizard.width() / total_steps;
+    index_temp = index;
+    vertical_level = 0;
+
+    mobile_device = $(document).width() < 600 && $total > 3;
+
+    if(mobile_device){
+        move_distance = $wizard.width() / 2;
+        index_temp = index % 2;
+        $li_width = 50;
+    }
+
+    $wizard.find('.nav li').css('width',$li_width + '%');
+
     step_width = move_distance;
-    move_distance *= index;
+    move_distance = move_distance * index_temp;
 
     $current = index + 1;
 
-    if($current == 1){
+    if($current == 1 || (mobile_device == true && (index % 2 == 0) )){
         move_distance -= 8;
-    } else if($current == total_steps){
+    } else if($current == total_steps || (mobile_device == true && (index % 2 == 1))){
         move_distance += 8;
+    }
+
+    if(mobile_device){
+        vertical_level = parseInt(index / 2);
+        vertical_level = vertical_level * 38;
     }
 
     $wizard.find('.moving-tab').css('width', step_width);
     $('.moving-tab').css({
-        'transform':'translate3d(' + move_distance + 'px, 0, 0)',
+        'transform':'translate3d(' + move_distance + 'px, ' + vertical_level +  'px, 0)',
         'transition': 'all 0.5s cubic-bezier(0.29, 1.42, 0.79, 1)'
 
     });
