@@ -54,7 +54,6 @@ material-bootstrap-wizard/
 |   └── img/
 |
 ├── documentation
-├── Creative Tim License.pdf
 ├── wizard-list-place.html
 ├── wizard-build-profile.html
 ├── wizard-book-room.html
@@ -63,7 +62,7 @@ material-bootstrap-wizard/
 
 ### Version logs
 
-v1.0, 27 Aug '16 [initial release]
+- V1.0, 27 Aug '16 [initial release]
 
 - V1.0.1, 06 Sep '16 - Bugfixing
     - added validation in next check step
@@ -71,8 +70,13 @@ v1.0, 27 Aug '16 [initial release]
     - edit readme
     - changes on scss files
 
+- V1.0.2, 22 Mar '17
+    - switched to MIT license
 
+### License
 
+- Copyright 2017 Creative Tim (http://www.creative-tim.com)
+- Licensed under MIT (https://github.com/creativetimofficial/material-bootstrap-wizard/blob/master/LICENSE.md)
 
 
 ## Useful Links
