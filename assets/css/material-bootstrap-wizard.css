@@ -1069,6 +1069,7 @@ select.form-control {
   .nav-pills > li + li {
     margin-left: 0; }
   .nav-pills > li > a {
+    outline: none;
     border: 0 !important;
     border-radius: 0;
     line-height: 18px;
