@@ -16,7 +16,19 @@
 
 @mixin set-wizard-color($color) {
     .moving-tab{
+        position: absolute;
+        text-align: center;
+        padding: 12px;
+        font-size: 12px;
+        text-transform: uppercase;
+        -webkit-font-smoothing: subpixel-antialiased;
         background-color: $color;
+        top:-4px;
+        left: 0px;
+        border-radius: 4px;
+        color: $white-color;
+        cursor: pointer;
+        font-weight: 500;
         @include shadow-big-color($color);
     }
 

@@ -1,23 +1,41 @@
-/*!
-
- =========================================================
- * Material Bootstrap Wizard - v1.0.2
- =========================================================
- 
- * Product Page: https://www.creative-tim.com/product/material-bootstrap-wizard
- * Copyright 2017 Creative Tim (http://www.creative-tim.com)
- * Licensed under MIT (https://github.com/creativetimofficial/material-bootstrap-wizard/blob/master/LICENSE.md)
- 
- =========================================================
- 
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
- */
+/*! =========================================================
+ *
+ * Material Bootstrap Wizard - V1.0.1
+ *
+ * =========================================================
+ *
+ * Copyright 2016 Creative Tim (http://www.creative-tim.com/product/material-bootstrap-wizard)
+ *
+ *
+ *                       _oo0oo_
+ *                      o8888888o
+ *                      88" . "88
+ *                      (| -_- |)
+ *                      0\  =  /0
+ *                    ___/`---'\___
+ *                  .' \|     |// '.
+ *                 / \|||  :  |||// \
+ *                / _||||| -:- |||||- \
+ *               |   | \\  -  /// |   |
+ *               | \_|  ''\---/''  |_/ |
+ *               \  .-\__  '-'  ___/-. /
+ *             ___'. .'  /--.--\  `. .'___
+ *          ."" '<  `.___\_<|>_/___.' >' "".
+ *         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+ *         \  \ `_.   \_ __\ /__ _/   .-` /  /
+ *     =====`-.____`.___ \_____/___.-`___.-'=====
+ *                       `=---='
+ *
+ *     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *
+ *               Buddha Bless:  "No Bugs"
+ *
+ * ========================================================= */
 
 // Material Bootstrap Wizard Functions
 
-var searchVisible = 0;
-var transparent = true;
-var mobile_device = false;
+searchVisible = 0;
+transparent = true;
 
 $(document).ready(function(){
 
@@ -63,17 +81,24 @@ $(document).ready(function(){
         },
 
         onInit : function(tab, navigation, index){
-            //check number of tabs and fill the entire row
-            var $total = navigation.find('li').length;
-            var $wizard = navigation.closest('.wizard-card');
 
-            $first_li = navigation.find('li:first-child a').html();
-            $moving_div = $('<div class="moving-tab">' + $first_li + '</div>');
-            $('.wizard-card .wizard-navigation').append($moving_div);
+          //check number of tabs and fill the entire row
+          var $total = navigation.find('li').length;
+          $width = 100/$total;
+          var $wizard = navigation.closest('.wizard-card');
 
-            refreshAnimation($wizard, index);
+          $display_width = $(document).width();
 
-            $('.moving-tab').css('transition','transform 0s');
+          if($display_width < 600 && $total > 3){
+              $width = 50;
+          }
+
+           navigation.find('li').css('width',$width + '%');
+           $first_li = navigation.find('li:first-child a').html();
+           $moving_div = $('<div class="moving-tab">' + $first_li + '</div>');
+           $('.wizard-card .wizard-navigation').append($moving_div);
+           refreshAnimation($wizard, index);
+           $('.moving-tab').css('transition','transform 0s');
        },
 
         onTabClick : function(tab, navigation, index){
@@ -172,7 +197,6 @@ function readURL(input) {
 $(window).resize(function(){
     $('.wizard-card').each(function(){
         $wizard = $(this);
-
         index = $wizard.bootstrapWizard('currentIndex');
         refreshAnimation($wizard, index);
 
@@ -183,43 +207,22 @@ $(window).resize(function(){
 });
 
 function refreshAnimation($wizard, index){
-    $total = $wizard.find('.nav li').length;
-    $li_width = 100/$total;
-
-    total_steps = $wizard.find('.nav li').length;
+    total_steps = $wizard.find('li').length;
     move_distance = $wizard.width() / total_steps;
-    index_temp = index;
-    vertical_level = 0;
-
-    mobile_device = $(document).width() < 600 && $total > 3;
-
-    if(mobile_device){
-        move_distance = $wizard.width() / 2;
-        index_temp = index % 2;
-        $li_width = 50;
-    }
-
-    $wizard.find('.nav li').css('width',$li_width + '%');
-
     step_width = move_distance;
-    move_distance = move_distance * index_temp;
+    move_distance *= index;
 
     $current = index + 1;
 
-    if($current == 1 || (mobile_device == true && (index % 2 == 0) )){
+    if($current == 1){
         move_distance -= 8;
-    } else if($current == total_steps || (mobile_device == true && (index % 2 == 1))){
+    } else if($current == total_steps){
         move_distance += 8;
-    }
-
-    if(mobile_device){
-        vertical_level = parseInt(index / 2);
-        vertical_level = vertical_level * 38;
     }
 
     $wizard.find('.moving-tab').css('width', step_width);
     $('.moving-tab').css({
-        'transform':'translate3d(' + move_distance + 'px, ' + vertical_level +  'px, 0)',
+        'transform':'translate3d(' + move_distance + 'px, 0, 0)',
         'transition': 'all 0.5s cubic-bezier(0.29, 1.42, 0.79, 1)'
 
     });
@@ -255,3 +258,11 @@ function debounce(func, wait, immediate) {
 		if (immediate && !timeout) func.apply(context, args);
 	};
 };
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-46172202-1', 'auto');
+ga('send', 'pageview');
