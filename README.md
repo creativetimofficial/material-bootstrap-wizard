@@ -1,4 +1,4 @@
-<# [Material Bootstrap Wizard](http://demos.creative-tim.com/material-bootstrap-wizard/wizard-book-room.html)
+# [Material Bootstrap Wizard](http://demos.creative-tim.com/material-bootstrap-wizard/wizard-book-room.html)
 
 ![alt text](http://s3.amazonaws.com/creativetim_bucket/products/48/original/opt_mbw_thumbnail.jpg?1472405077)
 
