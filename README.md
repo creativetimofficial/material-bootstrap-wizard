@@ -1,9 +1,3 @@
-<a href="https://www.creative-tim.com/campaign">
-<img border="0" alt="Creative Tim Black Friday Offer" src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/bf-github-banner.png" >
-</a>
-
-
-
 # [Material Bootstrap Wizard](http://demos.creative-tim.com/material-bootstrap-wizard/wizard-book-room.html)
 
 ![alt text](http://s3.amazonaws.com/creativetim_bucket/products/48/original/opt_mbw_thumbnail.jpg?1472405077)
