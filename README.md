@@ -78,7 +78,6 @@ material-bootstrap-wizard/
 - Copyright 2017 Creative Tim (http://www.creative-tim.com)
 - Licensed under MIT (https://github.com/creativetimofficial/material-bootstrap-wizard/blob/master/LICENSE.md)
 
-
 ## Useful Links
 
 More products from Creative Tim: <http://www.creative-tim.com/bootstrap-themes>
