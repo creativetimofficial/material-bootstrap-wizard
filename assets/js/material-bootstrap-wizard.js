@@ -76,7 +76,10 @@ $(document).ready(function(){
             $('.moving-tab').css('transition','transform 0s');
        },
 
-        onTabClick : function(tab, navigation, index){
+        onTabClick : function(tab, navigation, index, nextIndex){
+	 if (nextIndex <= index) {
+             return;
+           }
             var $valid = $('.wizard-card form').valid();
 
             if(!$valid){
